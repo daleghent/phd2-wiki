@@ -17,11 +17,13 @@ sudo apt-get install build-essential subversion cmake pkg-config libwxgtk3.0-dev
 
 ## phd2 ##
 
+We'll refer to the source tree location as $PHD2\_SRC
+
   * get the phd2 sources
 
-> https://code.google.com/p/open-phd-guiding/source/checkout
-
-We'll refer to the source tree location as $PHD2\_SRC
+```
+  git clone https://github.com/OpenPHDGuiding/phd2.git $PHD2_SRC
+```
 
   * generate the Makefiles
 
@@ -65,9 +67,9 @@ If you want to sign the package (required for uploading) you need to setup a gpg
 
 ## Prepare the source tar ##
 
-We need to start with a copy of the source code located in a directory named with the full version name, here 2.5.0 is used as an example, you must replace it by the current version in all the following commands. This directory must not include any subversion information. For that we use the "svn export" command:
+We need to start with a copy of the source code located in a directory named with the full version name, here 2.5.0 is used as an example, you must replace it by the current version in all the following commands. This directory must not include any git information. For that we use Github subversion compatibility command: "svn export":
 ```
-svn export http://open-phd-guiding.googlecode.com/svn/trunk phd2_2.5.0
+svn export https://github.com/OpenPHDGuiding/phd2/trunk phd2_2.5.0
 ```
 Then we remove some files not used by Linux:
 ```
