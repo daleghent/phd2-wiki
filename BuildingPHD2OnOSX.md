@@ -26,11 +26,11 @@ make
 make install
 ```
 
-  * Get the phd2 source code
+  * Get the phd2 source code from GitHub
 
-> https://code.google.com/p/open-phd-guiding/source/checkout
+```git clone https://github.com/OpenPHDGuiding/phd2.git```
 
-Checkout the open-phd-guiding source tree into a directory of your choice. We'll refer to this location as $PHD2\_SRC.
+You can clone the phd2 repo into a directory of your choice. We'll refer to this location as $PHD2\_SRC.
 
   * Generate the XCode project file
 
