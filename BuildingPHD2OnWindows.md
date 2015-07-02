@@ -76,9 +76,11 @@ Set an environment variable OPENCV\_DIR pointing to the install location.  For e
 
 > OPENCV\_DIR = C:\opencv-2.4.10
 
-6. Get the PHD2 source tree from the trunk branch at
+6. Get the PHD2 source tree from the GitHub. Our project page is https://github.com/OpenPHDGuiding
 
-> http://code.google.com/p/open-phd-guiding/
+```
+  git clone https://github.com/OpenPHDGuiding/phd2.git
+```
 
 7. Generate the Visual Studio project files
 
