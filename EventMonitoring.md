@@ -299,8 +299,10 @@ Set camera exposure (error):
 |`get_paused`|none      |boolean: true if paused|               |
 |`get_pixel_scale`|none      |integer: guider image scale in arc-sec/pixel. |               |
 |`get_profile`|none      |` {"id":profile_id,"name":"profile_name"} ` |
-|`get_profiles`|none      |array of ` {"id":profile_id,"name":"profile_name"} ` |
-|`get_star_image`|size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
+|`get_profiles`|none      |array of ` {"id":profile_id,"name":"profile_name"} ` |  |
+|`get_search_region`|none      |integer: search region radius |  |
+|`get_star_image`|integer: size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
+|`get_use_subframes`|none |boolean:subframes_in_use|  |
 |`guide`   | SETTLE (object), RECALIBRATE (boolean)| integer (0) | See below     |
 |`loop`    |none      |integer (0)|start capturing, or, if guiding, stop guiding but continue capturing|
 |`save_image`|none      |` {"filename":"full_path_to_FITS_image_file"} `| save the current image. The client should remove the file when done with it. |
