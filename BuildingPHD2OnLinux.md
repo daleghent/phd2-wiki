@@ -5,7 +5,7 @@
 
   * install dependencies (commands for a Fedora-like system; your system may vary)
 ```
-sudo yum install subversion cmake pkgconfig libwxgtk3.0-devel wx-common wx3.0-i18n libindi-devel libnova-devel zlib-devel
+sudo yum install git cmake pkgconfig wxGTK3-devel libindi-devel libnova-devel zlib-devel
 ```
 
 ### Ubuntu ###
