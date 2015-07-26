@@ -8,13 +8,13 @@ First you will need a translation editor. [Poedit](http://poedit.net/) is an exc
 
 To translate PHD2 into a new language:
 
-  1. Download the messages template file from the phd2 source repository: [messages.pot](https://open-phd-guiding.googlecode.com/svn/trunk/locale/messages.pot).
+  1. Download the messages template file from the phd2 source repository: [messages.pot](https://raw.githubusercontent.com/OpenPHDGuiding/phd2/master/locale/messages.pot).
   1. In Poedit, select "Start a new translation", and open the `messages.pot` file you just downloaded.
   1. Save your work as `messages.po`.
 
 # Updating an existing translation #
 
-  1. Get the `messages.po` file for your language from the phd2 source repository in the [locale folder](https://code.google.com/p/open-phd-guiding/source/browse/#svn%2Ftrunk%2Flocale). Browse to the language sub-folder for your language and click on `messages.po`. Use the link on the right side of the page "View raw file" to save `messages.po` to your computer.
+  1. Get the `messages.po` file for your language from the phd2 source repository in the [locale folder](https://github.com/OpenPHDGuiding/phd2/tree/master/locale). Browse to the language sub-folder for your language and click on `messages.po`. Use the Raw button on the top right side of the page to save `messages.po` to your computer.
   1. Open the `messages.po` file in Poedit
 
 # Viewing the translation in PHD2 #
