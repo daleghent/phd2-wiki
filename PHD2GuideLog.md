@@ -31,7 +31,7 @@ The guiding section columns are:
 | **Column** | **Description** |
 |:-----------|:----------------|
 | Frame      | Frame number    |
-| Time       | elapsed time from start of guiding |
+| Time       | elapsed time (seconds) from start of guiding |
 | mount      | guide correction device "Mount" or "AO", or "DROP" if camera frame was rejected |
 | dx         | X distance from lock position |
 | dy         | Y distance from lock position |
