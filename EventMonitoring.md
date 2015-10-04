@@ -313,6 +313,7 @@ Set camera exposure (error):
 |`set_lock_shift_params`|` {"rate":[XRATE,YRATE],"units":UNITS,"axes":AXES} `|integer (0)| UNITS = "arcsec/hr" or "pixels/hr"; AXES = "RA/Dec" or "X/Y"|
 |`set_paused`|PAUSED: boolean, FULL: string (optional) |integer (0)| When setting paused to `true`, an optional second parameter with value `"full"` can be provided to fully pause phd, including pausing looping exposures. Otherwise, exposures continue to loop, and only guide output is paused. Example: `{"method":"set_paused","params":[true,"full"],"id":42}` |
 |`set_profile`|integer: profile id| integer (0) | Select an equipment profile. All equipment must be disconnected before switching profiles. |
+|`shutdown`| | integer (0) | Close PHD2 |
 |`stop_capture`|none      |integer (0)|Stop capturing (and stop guiding)|
 
 ### Settle parameter ###
