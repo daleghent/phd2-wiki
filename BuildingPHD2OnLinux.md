@@ -12,7 +12,7 @@ sudo yum install git cmake pkgconfig wxGTK3-devel libindi-devel libnova-devel zl
 
   * install dependencies (tested on 14.04 and 14.10)
 ```
-sudo apt-get install build-essential subversion cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev
+sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev
 ```
 
 ## phd2 ##
