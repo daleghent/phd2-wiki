@@ -10,7 +10,7 @@ sudo yum install git cmake pkgconfig wxGTK3-devel libindi-devel libnova-devel zl
 
 ### Ubuntu ###
 
-  * install dependencies (tested on 14.04 and 14.10)
+  * install dependencies (tested on 14.04 to 15.10)
 ```
 sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev
 ```
