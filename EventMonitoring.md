@@ -298,7 +298,7 @@ Set camera exposure (error):
 |`get_lock_shift_enabled`|none      |boolean: true if lock shift enabled|               |
 |`get_lock_shift_params`|none      |example: ` {"enabled":true,"rate":[1.10,4.50],"units":"arcsec/hr","axes":"RA/Dec"} `|               |
 |`get_paused`|none      |boolean: true if paused|               |
-|`get_pixel_scale`|none      |integer: guider image scale in arc-sec/pixel. |               |
+|`get_pixel_scale`|none      |number: guider image scale in arc-sec/pixel. |               |
 |`get_profile`|none      |` {"id":profile_id,"name":"profile_name"} ` |
 |`get_profiles`|none      |array of ` {"id":profile_id,"name":"profile_name"} ` |  |
 |`get_search_region`|none      |integer: search region radius |  |
