@@ -5,7 +5,7 @@
 OpenPHD allows programs to connect to PHD to actively monitor guiding status and control PHD. This allows clients to do things like:
   * graph phd data in real time
   * monitor phd for exceptional events like guiding lost, and send an alert when something goes wrong
-  * control PHD remotely
+  * control PHD from an imaging application
 
 # Connection #
 
@@ -13,7 +13,7 @@ Clients connect to PHD on TCP port 4400. When multiple PHD instances are running
 
 PHD allows multiple clients to establish connections simultaneously.
 
-When a client establishes a connection, PHD sends a series of event notification messages to the client (see [#Initial\_Messages](#Initial_Messages.md)). Then, as guiding events take place in PHD, notification messages are sent to all connected clients.
+When a client establishes a connection, PHD sends a series of event notification messages to the client (see [#Initial\_Messages](#initial-event-messages)). Then, as guiding events take place in PHD, notification messages are sent to all connected clients.
 
 # Event Notification Messages #
 
@@ -112,9 +112,21 @@ The state attribute can be one of the following:
 | Selected | A star is selected but PHD is neither looping exposures, calibrating, or guiding |
 | Calibrating | PHD is calibrating |
 | Guiding | PHD is guiding |
-| LostLock  | PHD has lost its lock position |
+| LostLock  | PHD is guiding, but the frame was dropped |
 | Paused | PHD is paused |
 | Looping | PHD is looping exposures |
+
+The `AppState` notification is only sent when the client first connects to PHD2 (see [#Initial\_Messages](#initial-event-messages)). If an application would like to maintain an up-to-date `AppState` status, it will need to update its notion of `AppState` by handling individual notification events as follows:
+
+| Event | New AppState |
+|:------|:------------|
+|AppState|\<State\>|
+|GuideStep|Guiding|
+|Paused|Paused|
+|StartCalibration|Calibrating|
+|LoopingExposures|Looping|
+|LoopingExposuresStopped|Stopped|
+|StarLost|LostLock|
 
 ### `CalibrationFailed` ###
 
