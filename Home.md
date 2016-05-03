@@ -1,4 +1,4 @@
-# open-phd-guiding / PHD2 links #
+### PHD2 links ####
 
   * Users home page: http://openphdguiding.org/
   * Manual: http://openphdguiding.org/man/
@@ -9,15 +9,19 @@
   * Source code: https://github.com/OpenPHDGuiding/phd2
   * Buildbot: http://gcc10.fsffrance.org:8011/waterfall
 
-# Wiki pages #
+### PHD2 Device Support Information ###
 
-  * [BuildingPHD2OnWindows](BuildingPHD2OnWindows.md)
-  * [BuildingPHD2OnOSX](BuildingPHD2OnOSX.md)
-  * [BuildingPHD2OnLinux](BuildingPHD2OnLinux.md)
-  * [CMakeBuildSystem](CMakeBuildSystem.md)
-  * [TranslatingPHD2](TranslatingPHD2.md)
-  * [EventMonitoring](EventMonitoring.md)
-  * [SocketServerInterface](SocketServerInterface.md)
-  * [DriftAlignmentWithPHD2](DriftAlignmentWithPHD2.md)
-  * [HardwareReadyToPort](HardwareReadyToPort.md)
-  * [Screenshots](Screenshots.md)
+  * [Cameras](/OpenPHDGuiding/phd2/wiki/Camera)
+  * [Mounts](/OpenPHDGuiding/phd2/wiki/Mount)
+  * [AO Devices](/OpenPHDGuiding/phd2/wiki/AO)
+  * [Instrument Rotators](/OpenPHDGuiding/phd2/wiki/Rotator)
+
+### Information for Developers ###
+
+  * [Translating PHD2](/OpenPHDGuiding/phd2/wiki/TranslatingPHD2) - instructions for translating PHD2 to other locales
+  * [Building PHD2 On Windows](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnWindows)
+  * [Building PHD2 On OSX](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnOSX)
+  * [Building PHD2 On Linux](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnLinux)
+  * [CMake Build System](/OpenPHDGuiding/phd2/wiki/CMakeBuildSystem)
+  * [Event Monitoring Interface](/OpenPHDGuiding/phd2/wiki/EventMonitoring) - how to control and monitor PHD2 from other applications
+  * [Socket Server Interface](/OpenPHDGuiding/phd2/wiki/SocketServerInterface) - the old way to control PHD, supported for backward compatibility with PHD1
