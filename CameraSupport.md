@@ -2,6 +2,8 @@
 
 Please help us keep this page up to date!  You can edit this page if you have a github account.  If you do not have a github account and do not want to get one, then please post on the [PHD2 Forum](https://groups.google.com/forum/?fromgroups=#!forum/open-phd-guiding) and let us know what you would like to see updated.
 
+**NOTE**: If you do not see your camera in the list below, or if it is marked as not supported, you may still be able to use it with PHD2.  If the camera has an available ASCOM driver (Windows) or an INDI driver (Linux), then you _can_ use the camera with PHD2.
+
 |Camera|Windows|OSX|Linux|Notes|
 |------|:-----:|:-:|:---:|-----|
 | Altair Cameras | Yes | No | No |  |
@@ -11,7 +13,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | CCD Labs Q-Guider | Yes | No | No |  |
 | Fishcamp Starfish | Yes | Yes | No |  |
 | i-Nova PLC-M | Yes | No | No | |
-| INDI Cameras|No|No|Yes| [List of INDI camera](http://www.indilib.org/devices/ccds.html) |
+| INDI Cameras|No|No|Yes| [INDI camera list](http://www.indilib.org/devices/ccds.html) |
 | KWIQGuider | No | Yes | No |  |
 | Long exposure webcams | Yes | No | No | USB, Parallel, or serial interface |
 | MagZero MZ-5 | Yes | No | No |  |
