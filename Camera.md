@@ -5,12 +5,12 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 |Camera|Windows|OSX|Linux|Notes|
 |------|:-----:|:-:|:---:|-----|
 | Altair Cameras | Yes | No | No |  |
-| ASCOM Cameras|Yes|No|No||
+| ASCOM Cameras| Yes | No | No | |
 | Atik 16 series | Yes | No | No | color and mono |
 | Atik Gen 3  | Yes | No | No | color and mono |
 | CCD Labs Q-Guider | Yes | No | No |  |
-| Fishcamp Starfish | Yes | Yes |  |  |
-| i-Nova PLC-M | Yes | No | No |  |
+| Fishcamp Starfish | Yes | Yes | No |  |
+| i-Nova PLC-M | Yes | No | No | No |
 | INDI Cameras|No|No|Yes| |
 | KWIQGuider | No | Yes | No |  |
 | Long exposure webcams | Yes | No | No | USB, Parallel, or serial interface |
@@ -29,7 +29,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Starlight Xpress cameras |Yes|Yes|Yes||
 | The Imaging Source (DCAM Firewire) | No | Yes | No |  |
 | Windows WDM-style webcams | Yes | No | No |  |
-| ZWO ASI cameras|Yes|Yes|Yes||
+| ZWO ASI cameras| Yes | Yes | Yes | |
 
 <a name=sbig></a>
 ### SBIG Cameras ###
@@ -38,4 +38,4 @@ SBIG cameras only allow a single application at a time to access the camera. If 
 
 <a name=qhy></a>
 ### QHY Cameras ###
-QHY camera support in PHD2 is based on a old QHY SDK from 2013. QHY has a new SDK and we have been working on integrating this into PHD2.  When available, the new SDK will support all recent QHY cameras on Windows, OSX and Linux. There is a series of QHY test builds available, please check in the PHD2 forum -- search the forum for QHY Test.
+QHY camera support in PHD2 is based on a older QHY SDK from 2013. QHY has a new SDK and we have been working on integrating this into PHD2.  When available, the new SDK will support all recent QHY cameras on Windows, OSX and Linux. There is a series of QHY test builds available, please check in the PHD2 forum -- search the forum for QHY Test.
