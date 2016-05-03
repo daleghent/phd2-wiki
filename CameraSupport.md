@@ -11,7 +11,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | CCD Labs Q-Guider | Yes | No | No |  |
 | Fishcamp Starfish | Yes | Yes | No |  |
 | i-Nova PLC-M | Yes | No | No | |
-| INDI Cameras|No|No|Yes| |
+| INDI Cameras|No|No|Yes| [List of INDI camera](http://www.indilib.org/devices/ccds.html) |
 | KWIQGuider | No | Yes | No |  |
 | Long exposure webcams | Yes | No | No | USB, Parallel, or serial interface |
 | MagZero MZ-5 | Yes | No | No |  |
