@@ -10,7 +10,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Atik Gen 3  | Yes | No | No | color and mono |
 | CCD Labs Q-Guider | Yes | No | No |  |
 | Fishcamp Starfish | Yes | Yes | No |  |
-| i-Nova PLC-M | Yes | No | No | No |
+| i-Nova PLC-M | Yes | No | No | |
 | INDI Cameras|No|No|Yes| |
 | KWIQGuider | No | Yes | No |  |
 | Long exposure webcams | Yes | No | No | USB, Parallel, or serial interface |
@@ -19,7 +19,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | OpenCV webcam | Yes | No | No |  |
 | Orion StarShoot Autoguider | Yes | Yes | No |  |
 | Orion Starshoot DSCI | Yes | No | No |  |
-| Orion StarShoot Planetary Imager and Autoguider | Yes |  |  |  |
+| Orion StarShoot Planetary Imager and Autoguider | Yes | No | No |  |
 | QHY5 | No | No | Yes | |
 | QHY5-II | Yes | No | No | [QHY info](#qhy) |
 | QHY5L-II | Yes | No | No | color or mono<br>[QHY info](#qhy) |
