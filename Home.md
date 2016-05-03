@@ -14,12 +14,10 @@
   * [BuildingPHD2OnWindows](BuildingPHD2OnWindows.md)
   * [BuildingPHD2OnOSX](BuildingPHD2OnOSX.md)
   * [BuildingPHD2OnLinux](BuildingPHD2OnLinux.md)
-
   * [CMakeBuildSystem](CMakeBuildSystem.md)
   * [TranslatingPHD2](TranslatingPHD2.md)
   * [EventMonitoring](EventMonitoring.md)
   * [SocketServerInterface](SocketServerInterface.md)
-
   * [DriftAlignmentWithPHD2](DriftAlignmentWithPHD2.md)
   * [HardwareReadyToPort](HardwareReadyToPort.md)
   * [Screenshots](Screenshots.md)
