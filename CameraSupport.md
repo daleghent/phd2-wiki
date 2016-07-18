@@ -28,7 +28,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | SAC4-2 | Yes | No | No |  |
 | SBIG cameras | Yes | Yes | No | [SBIG info](#sbig) |
 | Simulator | Yes | Yes | Yes | PHD2's built-in camera simulator, great for development and learning PHD2 |
-| Starlight Xpress cameras |Yes|Yes|Yes||
+| Starlight Xpress cameras |Yes|Yes|Yes|[SX info](#sx)|
 | The Imaging Source (DCAM Firewire) | No | Yes | No |  |
 | Windows WDM-style webcams | Yes | No | No |  |
 | ZWO ASI cameras| Yes | Yes | Yes | |
@@ -41,3 +41,7 @@ SBIG cameras only allow a single application at a time to access the camera. If 
 <a name=qhy></a>
 ### QHY Cameras ###
 QHY camera support in PHD2 is based on a older QHY SDK from 2013. QHY has a new SDK and we have been working on integrating this into PHD2.  When available, the new SDK will support all recent QHY cameras on Windows, OSX and Linux. There is a series of QHY test builds available, please check in the PHD2 forum -- search the forum for QHY Test.
+
+<a name=sx></a>
+### Starlight Xpress Cameras ###
+On Windows you can connect to your SX camera in two ways: with the ASCOM driver or the PHD2 built-in driver, "Starlight Xpress SXV".  If you are using the ASCOM driver and want to use a Bad-pixel map in PHD2, then make sure that you disable the ASCOM driver options Square Lodestar Pixels and Gaussian Blur as these options will interfere with PHD2 being able to identify hot pixels.
