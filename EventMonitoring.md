@@ -304,6 +304,7 @@ Set camera exposure (error):
 |`get_app_state`|none      |string: current app state| same value that came in the last [AppState](EventMonitoring#AppState.md) notification |
 |`get_calibrated`|none      |boolean: true if calibrated|               |
 |`get_connected`|none      |boolean: true if all equipment is connected |               |
+|`get_current_equipment`|none      |example: ` {"camera":{"name":"Simulator","connected":true},"mount":{"name":"On Camera","connected":true},"aux_mount":{"name":"Simulator","connected":true},"AO":{"name":"AO-Simulator","connected":false},"rotator":{"name":"Rotator Simulator .NET (ASCOM)","connected":false}} `|get the devices selected in the current equipment profile|
 |`get_exposure`|none      |integer: exposure time in milliseconds|               |
 |`get_exposure_durations`|none      |array of integers: the list of valid exposure times in milliseconds |               |
 |`get_lock_position`|none      |array: `[x, y]` coordinates of lock position, or `null` if lock position is not set |               |
