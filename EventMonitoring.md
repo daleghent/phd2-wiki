@@ -253,6 +253,15 @@ An alert message was displayed in PHD2.
 |Msg        |string|the text of the alert message|
 |Type       |string|The type of alert: "info", "question", "warning", or "error"|
 
+### `GuideParamChange` ###
+
+A guiding parameter has been changed.
+
+| Attribute | Type | Description |
+|:----------|:-----|:------------|
+|Name       |string|the name of the parameter that changed|
+|Value      |any|the new value of the parameter|
+
 ## Initial Event Messages ##
 
 When a client first connects, PHD sends a series of event messages to the client. The first event is
