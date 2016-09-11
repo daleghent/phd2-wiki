@@ -17,7 +17,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | KWIQGuider | No | Yes | No |  |
 | Long exposure webcams | Yes | No | No | USB, Parallel, or serial interface |
 | MagZero MZ-5 | Yes | No | No |  |
-| Mallincam SkyRaider-AG | Yes | No | No | Connects as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html)) |
+| Mallincam SkyRaider | Yes | No | No | Connects as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html)) |
 | Meade DSI, II, or III | Yes | Yes | No |  |
 | OpenCV webcam | Yes | No | No |  |
 | Orion StarShoot Autoguider | Yes | Yes | No |  |
