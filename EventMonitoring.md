@@ -167,6 +167,7 @@ Sent for each exposure frame after a `dither` or `guide` method invocation until
 | Distance  | number | the current distance between the guide star and lock position |
 | Time      | number | the elapsed time that the distance has been below the settling tolerance distance (the `pixels` attribute of the `SETTLE` parameter) |
 | SettleTime | number | the requested settle time (the `time` attribute of the `SETTLE` parameter) |
+| StarLocked | boolean | true if the guide star was found in the current camera frame, false if the guide star was lost |
 
 ### `SettleDone` ###
 
@@ -176,6 +177,8 @@ Sent after a `dither` or `guide` method invocation indicating whether settling w
 |:----------|:-----|:------------|
 | Status    | number | 0 if settling succeeded, non-zero if it failed |
 | Error     | string | a description of the reason why the `guide` or `dither` command failed to complete and settle |
+| TotalFrames | number | the number of camera frames while settling |
+| DroppedFrames | number | the number of dropped camera frames (guide star not found) while settling |
 
 ### `StarLost` ###
 
