@@ -313,6 +313,8 @@ Set camera exposure (error):
 |`dither`  | PIXELS (float), RA\_ONLY (boolean), SETTLE (object) | integer (0) | See below     |
 |`find_star`|none      | on success: returns the lock position of the selected star, otherwise returns an error object | Auto-select a star |
 |`flip_calibration`|none      | integer (0) |               |
+|`get_algo_param_names`|string: axis ("ra","x","dec", or "y") | array of guide algorithm param names (strings) |  |
+|`get_algo_param`|string: axis, string: name    | float: the value of the named parameter  | get the value of a guide algorithm parameter on an axis |
 |`get_app_state`|none      |string: current app state| same value that came in the last [AppState](EventMonitoring#AppState.md) notification |
 |`get_calibrated`|none      |boolean: true if calibrated|               |
 |`get_connected`|none      |boolean: true if all equipment is connected |               |
@@ -332,6 +334,7 @@ Set camera exposure (error):
 |`guide`   | SETTLE (object), RECALIBRATE (boolean)| integer (0) | See below     |
 |`loop`    |none      |integer (0)|start capturing, or, if guiding, stop guiding but continue capturing|
 |`save_image`|none      |` {"filename":"full_path_to_FITS_image_file"} `| save the current image. The client should remove the file when done with it. |
+|`set_algo_param`|string: axis, string: name, float: value    | integer(0)  | set a guide algorithm parameter on an axis |
 |`set_connected`|boolean: connect| integer (0) | connect or disconnect all equipment |
 |`set_exposure`|integer: exposure time in milliseconds| integer (0)|
 |`set_lock_position`|X: float, Y: float, EXACT: boolean (optional, default = true) | integer (0) | When EXACT is `true`, the lock position is moved to the exact given coordinates. When `false`, the current position is moved to the given coordinates and if a guide star is in range, the lock position is set to the coordinates of the guide star. |
