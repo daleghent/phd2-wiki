@@ -43,8 +43,14 @@ cmake -G Xcode -DwxWidgets_PREFIX_DIRECTORY=$WXWIN ..
 
   * Build and run PHD2
 
-Open the Xcode project
+Build from the command-line:
+
+> make -C $PHD2\_SRC/tmp
+
+Or, open the Xcode project and build with Xcode:
 
 > $PHD2\_SRC/tmp/PHD2.xcodeproj
 
-You can now build and run PHD2.
+The build produces the PHD2 app in:
+
+> $PHD2\_SRC/tmp/PHD2.app
