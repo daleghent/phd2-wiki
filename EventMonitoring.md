@@ -319,6 +319,7 @@ Set camera exposure (error):
 |`get_calibrated`|none      |boolean: true if calibrated|               |
 |`get_connected`|none      |boolean: true if all equipment is connected |               |
 |`get_current_equipment`|none      |example: ` {"camera":{"name":"Simulator","connected":true},"mount":{"name":"On Camera","connected":true},"aux_mount":{"name":"Simulator","connected":true},"AO":{"name":"AO-Simulator","connected":false},"rotator":{"name":"Rotator Simulator .NET (ASCOM)","connected":false}} `|get the devices selected in the current equipment profile|
+|`get_dec_guide_mode`|none      |string: "Off"/"Auto"/"North"/"South"|               |
 |`get_exposure`|none      |integer: exposure time in milliseconds|               |
 |`get_exposure_durations`|none      |array of integers: the list of valid exposure times in milliseconds |               |
 |`get_lock_position`|none      |array: `[x, y]` coordinates of lock position, or `null` if lock position is not set |               |
@@ -336,6 +337,7 @@ Set camera exposure (error):
 |`save_image`|none      |` {"filename":"full_path_to_FITS_image_file"} `| save the current image. The client should remove the file when done with it. |
 |`set_algo_param`|string: axis, string: name, float: value    | integer(0)  | set a guide algorithm parameter on an axis |
 |`set_connected`|boolean: connect| integer (0) | connect or disconnect all equipment |
+|`set_dec_guide_mode`|string: mode ("Off"/"Auto"/"North"/"South") | integer(0) |               |
 |`set_exposure`|integer: exposure time in milliseconds| integer (0)|
 |`set_lock_position`|X: float, Y: float, EXACT: boolean (optional, default = true) | integer (0) | When EXACT is `true`, the lock position is moved to the exact given coordinates. When `false`, the current position is moved to the given coordinates and if a guide star is in range, the lock position is set to the coordinates of the guide star. |
 |`set_lock_shift_enabled`|boolean: enable lock shift|integer (0)|               |
