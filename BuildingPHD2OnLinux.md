@@ -5,7 +5,7 @@
 
   * install dependencies (commands for a Fedora-like system; your system may vary)
 ```
-sudo yum install git cmake pkgconfig wxGTK3-devel libindi-devel libnova-devel zlib-devel libusb-devel
+sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel
 ```
 
 ### Ubuntu ###
