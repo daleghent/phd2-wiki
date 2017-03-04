@@ -12,7 +12,7 @@
 ### PHD2 Device Support Information ###
 
   * [Cameras](/OpenPHDGuiding/phd2/wiki/CameraSupport)
-  * [Mounts](/OpenPHDGuiding/phd2/wiki/Mounts)
+  * [Supported Mounts](/OpenPHDGuiding/phd2/wiki/Mounts), [Mount Worm Period Info](/OpenPHDGuiding/phd2/wiki/Mount-Worm-Period-Info)
   * [AO Devices](/OpenPHDGuiding/phd2/wiki/AOSupport)
   * [Instrument Rotators](/OpenPHDGuiding/phd2/wiki/Rotators)
 
