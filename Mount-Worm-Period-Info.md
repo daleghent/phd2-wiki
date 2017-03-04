@@ -1,4 +1,4 @@
-Please add your mount's worm period to the table below.  If you are unable to edit this page, please post a message to the [PHD2 Forum](https://groups.google.com/forum/?fromgroups=#!forum/open-phd-guiding) and we will update it for you.
+Please add your mount's worm period to the table below.  If you have a github account you can edit this page. If not, please post a message to the [PHD2 Forum](https://groups.google.com/forum/?fromgroups=#!forum/open-phd-guiding) and we will update it for you.
 
 |Mount|Worm Period, seconds|
 |-----|--------------------|
