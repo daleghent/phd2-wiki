@@ -4,5 +4,6 @@ Please add your mount's worm period to the table below.  If you have a github ac
 |-----|--------------------|
 |Astro-Physics 1100GTO|382.95|
 |Celestron CGEM|478.689|
+|Ioptron IEQ45PRO|336.6|
 |Losmandy G11|239.34|
 |Sky-watcher EQ6|479|
