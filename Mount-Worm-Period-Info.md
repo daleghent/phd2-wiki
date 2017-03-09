@@ -7,3 +7,4 @@ Please add your mount's worm period to the table below.  If you have a github ac
 |Ioptron IEQ45PRO|336.6|
 |Losmandy G11|239.34|
 |Sky-watcher EQ6|479|
+|Software Bisque Paramount MyT|269.26|
