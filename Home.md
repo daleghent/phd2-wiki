@@ -25,3 +25,4 @@
   * [CMake Build System](/OpenPHDGuiding/phd2/wiki/CMakeBuildSystem)
   * [Event Monitoring Interface](/OpenPHDGuiding/phd2/wiki/EventMonitoring) - how to control and monitor PHD2 from other applications
   * [Socket Server Interface](/OpenPHDGuiding/phd2/wiki/SocketServerInterface) - the old way to control PHD, supported for backward compatibility with PHD1
+  * [Predictive PEC Guide Algorithm](https://raw.githubusercontent.com/OpenPHDGuiding/phd2/master/contributions/MPI_IS_gaussian_process/doc/PredictivePEC_DevDoc.pdf)
