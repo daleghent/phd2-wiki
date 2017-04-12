@@ -317,6 +317,7 @@ Set camera exposure (error):
 |`get_algo_param`|string: axis, string: name    | float: the value of the named parameter  | get the value of a guide algorithm parameter on an axis |
 |`get_app_state`|none      |string: current app state| same value that came in the last [AppState](EventMonitoring#AppState.md) notification |
 |`get_calibrated`|none      |boolean: true if calibrated|               |
+|`get_calibration_data`|string: which ("AO" or "Mount") optional, default = "Mount"| example output: `  {"calibrated":true,"xAngle":-167.1,"xRate":39.124,"xParity":"-","yAngle":106.1,"yRate":39.330,"yParity":"+"} ` |
 |`get_connected`|none      |boolean: true if all equipment is connected |               |
 |`get_current_equipment`|none      |example: ` {"camera":{"name":"Simulator","connected":true},"mount":{"name":"On Camera","connected":true},"aux_mount":{"name":"Simulator","connected":true},"AO":{"name":"AO-Simulator","connected":false},"rotator":{"name":"Rotator Simulator .NET (ASCOM)","connected":false}} `|get the devices selected in the current equipment profile|
 |`get_dec_guide_mode`|none      |string: "Off"/"Auto"/"North"/"South"|               |
@@ -333,6 +334,7 @@ Set camera exposure (error):
 |`get_star_image`|integer: size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
 |`get_use_subframes`|none |boolean:subframes_in_use|  |
 |`guide`   | SETTLE (object), RECALIBRATE (boolean)| integer (0) | See below     |
+|`guide_pulse`| integer: amount (pulse duration in milliseconds, or ao step count), string: direction ("N"/"S"/"E"/"W"/"Up"/"Down"/"Left"/"Right"), string (optional): which ("AO" or "Mount" [default]) | integer (0) | Returns an error if PHD2 is currently calibrating or guiding
 |`loop`    |none      |integer (0)|start capturing, or, if guiding, stop guiding but continue capturing|
 |`save_image`|none      |` {"filename":"full_path_to_FITS_image_file"} `| save the current image. The client should remove the file when done with it. |
 |`set_algo_param`|string: axis, string: name, float: value    | integer(0)  | set a guide algorithm parameter on an axis |
