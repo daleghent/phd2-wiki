@@ -4,6 +4,8 @@
 
 > http://www.cmake.org/download/
 
+NOTE: newer versions of CMake like 3.8.0 do not currently work for building PHD2. CMake version 3.5.2 is known to work, so please install that version for building PHD2.
+
   * Install Xcode 4 or Xcode 5
 
 > Our official builds are done with Xcode 4, but Xcode 5 can be used for development.
