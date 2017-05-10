@@ -24,8 +24,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Orion Starshoot DSCI | Yes | No | No |  |
 | Orion StarShoot Planetary Imager and Autoguider | Yes | No | No |  |
 | QHY5 | No | No | Yes | |
-| QHY5-II | Yes | No | No | [QHY info](#qhy) |
-| QHY5L-II | Yes | No | No | color or mono<br>[QHY info](#qhy) |
+| QHY Cameras | Yes | Yes | Yes | (cameras more recent than the QHY5) |
 | SAC4-2 | Yes | No | No |  |
 | SBIG cameras | Yes | Yes | No | [SBIG info](#sbig) |
 | Simulator | Yes | Yes | Yes | PHD2's built-in camera simulator, great for development and learning PHD2 |
@@ -38,10 +37,6 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 ### SBIG Cameras ###
 
 SBIG cameras only allow a single application at a time to access the camera. If the camera is one of the self-guiding models with a built-in guide camera, then the imaging app controlling the imaging chip will need to provide access to the guide camera. The only app we know of with this capability is Sequence Generator Pro which exposes the internal guide camera to PHD2 as an ASCOM camera.
-
-<a name=qhy></a>
-### QHY Cameras ###
-QHY camera support in PHD2 is based on a older QHY SDK from 2013. QHY has a new SDK and we have been working on integrating this into PHD2.  When available, the new SDK will support all recent QHY cameras on Windows, OSX and Linux. There is a series of QHY test builds available, please check in the PHD2 forum -- search the forum for QHY Test.
 
 <a name=sx></a>
 ### Starlight Xpress Cameras ###
