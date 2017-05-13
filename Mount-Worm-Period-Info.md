@@ -10,3 +10,4 @@ Please add your mount's worm period to the table below.  If you have a github ac
 |Losmandy Titan|318.1262611|
 |Sky-watcher EQ6|479|
 |Software Bisque Paramount MyT|269.26|
+|Takahashi EM-400|480|
