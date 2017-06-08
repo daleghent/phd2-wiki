@@ -5,7 +5,7 @@
 
   * install dependencies (commands for a Fedora-like system; your system may vary)
 ```
-sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl-devel
+sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl4-openssl-dev
 ```
 
 ### Ubuntu ###
