@@ -5,14 +5,14 @@
 
   * install dependencies (commands for a Fedora-like system; your system may vary)
 ```
-sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl4-openssl-dev
+sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl-devel
 ```
 
 ### Ubuntu ###
 
   * install dependencies (tested on 14.04 to 15.10)
 ```
-sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev libx11-dev libcurl4-openssl-dev
+sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
 
 ## phd2 ##
