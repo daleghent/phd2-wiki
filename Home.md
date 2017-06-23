@@ -16,6 +16,11 @@
   * [AO Devices](/OpenPHDGuiding/phd2/wiki/AOSupport)
   * [Instrument Rotators](/OpenPHDGuiding/phd2/wiki/Rotators)
 
+## How-to instructions
+
+  * [Drift alignment](https://sites.google.com/site/openphdguiding/phd2-drift-alignment)
+  * [Guiding for Spectroscopy](/OpenPHDGuiding/phd2/wiki/PHD2-Guiding-for-Spectroscopy)
+
 ### Information for Developers ###
 
   * [Translating PHD2](/OpenPHDGuiding/phd2/wiki/TranslatingPHD2) - instructions for translating PHD2 to other locales
