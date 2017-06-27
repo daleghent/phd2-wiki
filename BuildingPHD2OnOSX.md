@@ -1,24 +1,28 @@
 # Building PHD2 on OSX #
 
-  * Install CMake, the cross-platform build system
+  * Install CMake version 3.5.2
 
 > http://www.cmake.org/download/
 
 NOTE: newer versions of CMake like 3.8.0 do not currently work for building PHD2. CMake version 3.5.2 is known to work, so please install that version for building PHD2.
 
-  * Install Xcode 4 or Xcode 5
+  * Install Xcode 4 or newer and the Xcode Command Line Tools
 
-> Our official builds are done with Xcode 4, but Xcode 5 can be used for development.
+> Our official builds are done with Xcode 4, but any newer version can be used for development.
 
-  * Download and build wxWidgets-3.0.2
+  * Install the MacOSX10.7 SDK to support deploying PHD2 on older Macs
+
+> Download Xcode 4.6.3 from developer.apple.com, extract the MacOSX10.7.sdk folder and put it under /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+
+  * Download and build wxWidgets-3.0.3
 
 > http://wxwidgets.org/downloads/
 
-cd to the wxWidgets-3.0.2 source directory and run the following commands to build wxWidgets 32-bit static libs and install them to a location $WXWIN
+cd to the wxWidgets-3.0.3 source directory and run the following commands to build wxWidgets 32-bit static libs and install them to a location $WXWIN
 
 ```
 ./configure --enable-universal_binary=i386,x86_64 --disable-shared --with-libpng=builtin --with-cocoa --prefix=$WXWIN \
-             --with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/ \
+             --with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/ \
              --with-macosx-version-min=10.7 \
              CXXFLAGS="-stdlib=libc++ -std=c++11" \
              OBJCXXFLAGS="-stdlib=libc++ -std=c++11" \
@@ -28,26 +32,28 @@ make
 make install
 ```
 
+  * install GNU gettext
+
+> an easy way to install it is to install [Mac Ports](https://www.macports.org/install.php), then ```port install gettext```
+
   * Get the phd2 source code from GitHub
 
 ```git clone https://github.com/OpenPHDGuiding/phd2.git```
 
 You can clone the phd2 repo into a directory of your choice. We'll refer to this location as $PHD2\_SRC.
 
-  * Generate the XCode project file
+  * Generate the Makefiles
 
 ```
 cd $PHD2_SRC
 mkdir -p tmp
 cd tmp
-cmake -G Xcode -DwxWidgets_PREFIX_DIRECTORY=$WXWIN ..
+cmake -G "Unix Makefiles" -DwxWidgets_PREFIX_DIRECTORY=$WXWIN ..
 ```
 
   * Build and run PHD2
 
-Open the Xcode project and build with Xcode:
-
-> $PHD2\_SRC/tmp/PHD2.xcodeproj
+> make -C $PHD2\_SRC/tmp
 
 The build produces the PHD2 app in:
 
