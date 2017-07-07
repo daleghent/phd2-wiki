@@ -309,6 +309,7 @@ Set camera exposure (error):
 
 |**Method**|**params**|**result**|**Description**|
 |:---------|:---------|:---------|:--------------|
+|`capture_single_frame`|exposure: exposure duration milliseconds (optional), subframe: array [x,y,width,height] (optional)| integer(0) | captures a singe frame; guiding and looping must be stopped first |
 |`clear_calibration`|string: "mount" or "ao" or "both"| integer (0) | if parameter is omitted, will clear both mount and AO. Clearing calibration causes PHD2 to recalibrate next time guiding starts.|
 |`dither`  | PIXELS (float), RA\_ONLY (boolean), SETTLE (object) | integer (0) | See below     |
 |`find_star`|none      | on success: returns the lock position of the selected star, otherwise returns an error object | Auto-select a star |
