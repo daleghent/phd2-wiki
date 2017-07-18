@@ -36,7 +36,9 @@ make install
 
 > an easy way to install gettext is to install [Mac Ports](https://www.macports.org/install.php), then ```port install gettext```
 
-#### install the INDI client library.  We have a pre-built library that can be used, or you can build from source.
+#### Install the INDI client library.
+
+We have a pre-built library that can be used, or you can build from source.
 
   * option 1: install pre-built library
 
@@ -84,7 +86,7 @@ sudo make install
 
 You can clone the phd2 repo into a directory of your choice. We'll refer to this location as $PHD2\_SRC.
 
-  * Generate the Makefiles
+#### Generate the Makefiles
 
 ```
 cd $PHD2_SRC
@@ -93,7 +95,7 @@ cd tmp
 cmake -G "Unix Makefiles" -DwxWidgets_PREFIX_DIRECTORY=$WXWIN ..
 ```
 
-  * Build and run PHD2
+#### Build and run PHD2
 
 > make -C $PHD2\_SRC/tmp
 
