@@ -32,7 +32,7 @@ make
 make install
 ```
 
-#### install GNU gettext
+#### Install GNU gettext
 
 > an easy way to install gettext is to install [Mac Ports](https://www.macports.org/install.php), then ```port install gettext```
 
@@ -58,7 +58,7 @@ build_arch i386
     * install the INDI client build prerequisites:
 
 ```
-sudo port install libnova cfitsio
+sudo port install cfitsio
 ```
 
   *
