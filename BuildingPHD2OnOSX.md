@@ -84,21 +84,17 @@ sudo make install
 
 ```git clone https://github.com/OpenPHDGuiding/phd2.git```
 
-You can clone the phd2 repo into a directory of your choice. We'll refer to this location as $PHD2\_SRC.
-
 #### Generate the Makefiles
 
 ```
-cd $PHD2_SRC
+cd phd2
 mkdir -p tmp
 cd tmp
 cmake -G "Unix Makefiles" -DwxWidgets_PREFIX_DIRECTORY=$WXWIN ..
 ```
 
-#### Build and run PHD2
+#### Build PHD2
 
-> make -C $PHD2\_SRC/tmp
+> make
 
-The build produces the PHD2 app in:
-
-> $PHD2\_SRC/tmp/PHD2.app
+This will build `PHD2.app`
