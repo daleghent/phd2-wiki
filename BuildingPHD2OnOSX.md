@@ -43,8 +43,8 @@ We have a pre-built library that can be used, or you can build from source.
   * option 1: install pre-built library
 
 ```
-curl -O https://openphdguiding.org/indiclient-20170714-OSX-i386.tar.gz
-sudo tar xfz indiclient-20170714-OSX-i386.tar.gz -C /opt/local
+curl -O https://openphdguiding.org/indiclient-e1edfb66-OSX-i386.tar.gz
+sudo tar xfz indiclient-e1edfb66-OSX-i386.tar.gz -C /opt/local
 ```
 
   * option 2: build INDI client from source
