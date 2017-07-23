@@ -6,32 +6,32 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 
 |Camera|Windows|OSX|Linux|Notes|
 |------|:-----:|:-:|:---:|-----|
-| Altair Cameras | Yes | No | No |  |
-| ASCOM Cameras| Yes | No | No | |
-| Atik 16 series | Yes | No | No | color and mono |
-| Atik Gen 3  | Yes | No | No | color and mono |
-| CCD Labs Q-Guider | Yes | No | No |  |
-| Fishcamp Starfish | Yes | Yes | No |  |
-| i-Nova PLC-M | Yes | No | No | |
-| INDI Cameras|No|No|Yes| [INDI camera list](http://www.indilib.org/devices/ccds.html) |
-| KWIQGuider | No | Yes | No |  |
-| Long exposure webcams | Yes | No | No | USB, Parallel, or serial interface |
-| MagZero MZ-5 | Yes | No | No |  |
-| Mallincam SkyRaider | Yes | No | No | Connects as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html)) |
-| Meade DSI I, II, or III | Yes | Yes | No |  |
-| OpenCV webcam | Yes | No | No |  |
-| Orion StarShoot Autoguider | Yes | Yes | Yes (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) |  |
-| Orion Starshoot DSCI | Yes | No | No |  |
-| Orion StarShoot Planetary Imager and Autoguider | Yes | No | No |  |
-| QHY5 | No | No | Yes | |
-| QHY Cameras | Yes | Yes | Yes | (cameras more recent than the QHY5) |
-| SAC4-2 | Yes | No | No |  |
-| SBIG cameras | Yes | Yes | No | [SBIG info](#sbig) |
-| Simulator | Yes | Yes | Yes | PHD2's built-in camera simulator, great for development and learning PHD2 |
-| Starlight Xpress cameras |Yes|Yes|Yes|[SX info](#sx)|
-| The Imaging Source (DCAM Firewire) | No | Yes | No |  |
-| Windows WDM-style webcams | Yes | No | No |  |
-| ZWO ASI cameras| Yes | Yes | Yes | |
+| Altair Cameras | **Yes** | No | No |  |
+| ASCOM Cameras| **Yes** | No | No | Linux/Mac available through WINDI |
+| Atik 16 series | **Yes** | No | No | color and mono |
+| Atik Gen 3  | **Yes** | No | No | color and mono |
+| CCD Labs Q-Guider | **Yes** | No | No |  |
+| Fishcamp Starfish | **Yes** | **Yes** | No |  |
+| i-Nova PLC-M | **Yes** | No | No | |
+| INDI Cameras| **Yes** | **Yes** | **Yes** | [INDI camera list](http://www.indilib.org/devices/ccds.html) |
+| KWIQGuider | No | **Yes** | No |  |
+| Long exposure webcams | **Yes** | No | No | USB, Parallel, or serial interface |
+| MagZero MZ-5 | **Yes** | No | No |  |
+| Mallincam SkyRaider | **Yes** | No | No | Connects as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html)) |
+| Meade DSI I, II, or III | **Yes** | **Yes** | No |  |
+| OpenCV webcam | **Yes** | No | No |  |
+| Orion StarShoot Autoguider | **Yes** | **Yes** | **Yes** (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) |  |
+| Orion Starshoot DSCI | **Yes** | No | No |  |
+| Orion StarShoot Planetary Imager and Autoguider | **Yes** | No | No |  |
+| QHY5 | No | No | **Yes** | |
+| QHY Cameras | **Yes** | **Yes** | **Yes** | (cameras more recent than the QHY5) |
+| SAC4-2 | **Yes** | No | No |  |
+| SBIG cameras | **Yes** | **Yes** | No | [SBIG info](#sbig) |
+| Simulator | **Yes** | **Yes** | **Yes** | PHD2's built-in camera simulator, great for development and learning PHD2 |
+| Starlight Xpress cameras | **Yes** | **Yes** | **Yes** |[SX info](#sx)|
+| The Imaging Source (DCAM Firewire) | No | **Yes** | No |  |
+| Windows WDM-style webcams | **Yes** | No | No |  |
+| ZWO ASI cameras| **Yes** | **Yes** | **Yes** | |
 
 <a name=sbig></a>
 ### SBIG Cameras ###
