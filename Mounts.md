@@ -4,13 +4,12 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 
 |Mount|Windows|OSX|Linux|Notes|
 |-----|:-----:|:-:|:--:|-----|
-| ASCOM mounts| Yes | No | No | [EQASCOM Info](EQASCOM-Settings) |
-| EQMAC | No | Yes | No |  |
-| Equinox 6 | No | Yes | No |  |
-| GC USB ST4 | No | Yes | No |  |
-| INDI mounts | Yes | Yes | Yes | [List of INDI mounts](http://www.indilib.org/devices/telescopes.html) |
-| Shoestring GPINT | Yes | No | No |  |
-| Shoestring GPUSB | Yes | Yes | No |  |
-| On-camera | Yes | Yes | Yes | for supported guide camera with ST4 port |
-| On-AO | Yes | No | Yes | SX AO only |
-
+| ASCOM mounts| **Yes** | No | No | [EQASCOM Info](EQASCOM-Settings) |
+| EQMAC | No | **Yes** | No |  |
+| Equinox 6 | No | **Yes** | No |  |
+| GC USB ST4 | No | **Yes** | No |  |
+| INDI mounts | **Yes** | **Yes** | **Yes** | [List of INDI mounts](http://www.indilib.org/devices/telescopes.html) |
+| Shoestring GPINT | **Yes** | No | No |  |
+| Shoestring GPUSB | **Yes** | **Yes** | No |  |
+| On-camera | **Yes** | **Yes** | **Yes** | for supported guide camera with ST4 port |
+| On-AO | **Yes** | No | **Yes** | SX AO only |
