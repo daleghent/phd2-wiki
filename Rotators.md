@@ -4,5 +4,4 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 
 |Rotator|Windows|OSX|Linux|Notes|
 |------|:-----:|:-:|:---:|-----|
-|ASCOM rotator| Yes | No | No |  |
-
+|ASCOM rotator| **Yes** | No | No | Mac/Linux support through WINDI (?) |
