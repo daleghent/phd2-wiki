@@ -5,6 +5,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 |Mount|Windows|OSX|Linux|Notes|
 |-----|:-----:|:-:|:--:|-----|
 | ASCOM mounts| **Yes** | No | No | [EQASCOM Info](EQASCOM-Settings) |
+| Celestron Mounts | | | | [Celestron Info](Celestron-Mount-Connection) |
 | EQMAC | No | **Yes** | No |  |
 | Equinox 6 | No | **Yes** | No |  |
 | GC USB ST4 | No | **Yes** | No |  |
