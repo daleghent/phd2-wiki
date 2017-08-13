@@ -15,35 +15,36 @@ sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static l
 sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
 
-## phd2 ##
+### INDI version requirement ###
 
-We'll refer to the source tree location as $PHD2\_SRC
+PHD2 requires a version of INDI newer than 2017/07/19. If you have an Ubuntu-derived distro, use Jasem's [PPA](https://launchpad.net/~mutlaqja/+archive/ubuntu/ppa) to install the most up-to-date INDI library.  For other distros, you can build libindi from source: [instructions](https://github.com/indilib/indi).
+
+## phd2 ##
 
   * get the phd2 sources
 
 ```
-  git clone https://github.com/OpenPHDGuiding/phd2.git $PHD2_SRC
+  git clone https://github.com/OpenPHDGuiding/phd2.git
+  cd phd2
 ```
 
   * generate the Makefiles
 
 ```
-  mkdir -p $PHD2_SRC/tmp
-  cd $PHD2_SRC/tmp
+  mkdir -p tmp
+  cd tmp
   cmake ..
 ```
 
   * build phd2
 
 ```
-  cd $PHD2_SRC/tmp
   make
 ```
 
   * run phd2
 
 ```
-  cd $PHD2_SRC/tmp
   ./phd2
 ```
 
