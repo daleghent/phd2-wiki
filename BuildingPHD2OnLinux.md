@@ -17,7 +17,7 @@ sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-com
 
 ### INDI version requirement ###
 
-PHD2 requires a version of INDI newer than 2017/07/19. If you have an Ubuntu-derived distro, use Jasem's [PPA](https://launchpad.net/~mutlaqja/+archive/ubuntu/ppa) to install the most up-to-date INDI library.  For other distros, you can build libindi from source: [instructions](https://github.com/indilib/indi).
+PHD2 requires a version of INDI newer than 2017/07/19, or a stable version 1.5.0 or newer. If you have an Ubuntu-derived distro, use Jasem's [PPA](https://launchpad.net/~mutlaqja/+archive/ubuntu/ppa) to install the most up-to-date INDI library.  For other distros, you can build libindi from source: [instructions](https://github.com/indilib/indi).
 
 ## phd2 ##
 
