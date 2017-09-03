@@ -12,7 +12,7 @@ sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static l
 
   * install dependencies (tested on 14.04 to 15.10)
 ```
-sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev zlib1g-dev libx11-dev libcurl4-gnutls-dev
+sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
 
 ### INDI version requirement ###
