@@ -320,6 +320,7 @@ Set camera exposure (error):
 |`get_calibrated`|none      |boolean: true if calibrated|               |
 |`get_calibration_data`|string: which ("AO" or "Mount") optional, default = "Mount"| example output: `  {"calibrated":true,"xAngle":-167.1,"xRate":39.124,"xParity":"-","yAngle":106.1,"yRate":39.330,"yParity":"+"} ` |
 |`get_connected`|none      |boolean: true if all equipment is connected |               |
+|`get_cooler_status`|none      |"temperature": sensor temperature in degrees C (number), "coolerOn": boolean, "setpoint": cooler set-point temperature (number, degrees C), "power": cooler power (number, percent)  | returns a JSONRPC error if the camera does not have a cooler |
 |`get_current_equipment`|none      |example: ` {"camera":{"name":"Simulator","connected":true},"mount":{"name":"On Camera","connected":true},"aux_mount":{"name":"Simulator","connected":true},"AO":{"name":"AO-Simulator","connected":false},"rotator":{"name":"Rotator Simulator .NET (ASCOM)","connected":false}} `|get the devices selected in the current equipment profile|
 |`get_dec_guide_mode`|none      |string: "Off"/"Auto"/"North"/"South"|               |
 |`get_exposure`|none      |integer: exposure time in milliseconds|               |
@@ -332,6 +333,7 @@ Set camera exposure (error):
 |`get_profile`|none      |` {"id":profile_id,"name":"profile_name"} ` |
 |`get_profiles`|none      |array of ` {"id":profile_id,"name":"profile_name"} ` |  |
 |`get_search_region`|none      |integer: search region radius |  |
+|`get_sensor_temperature`|none      |"temperature": sensor temperature in degrees C (number) |  |
 |`get_star_image`|integer: size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
 |`get_use_subframes`|none |boolean:subframes_in_use|  |
 |`guide`   | SETTLE (object), RECALIBRATE (boolean)| integer (0) | See below     |
