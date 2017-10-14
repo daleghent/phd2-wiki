@@ -1,3 +1,9 @@
+## Contents ##
+
+* [Basic Connection Info](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#basic-connection-info)
+* [PECTool Connection](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#pectool-connection)
+* [Declination Backlash Info](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#declination-backlash-info)
+
 ## Basic Connection Info ##
 
 From Peter Wolsley: ([PHD2 forum thread](https://groups.google.com/d/msg/open-phd-guiding/h6sLV4ktQL0/D0Q6IYV_AwAJ))
@@ -49,3 +55,28 @@ That was a messy explaination but now that you are using NexRemote you now have 
 If you don't want to go down this road then you are left with not using ASCOM, or NexRemote when using PECTool.  You simply connect PHD2 to the mount using the "On Camera" method and connect PECTool to the mount's com port.  This is exactly what you have already been doing. There is nothing wrong with this method and nothing wrong with using the PPEC feature of PHD2 while using PECTool.  The reason why is that PECTool is only recording the RAW RA position feedback of your mount and the RA Index.  It does not look at any autoguiding commands. All that is important is that your guiding is good.  If your guiding is all over the map then PECtool is going to blindly record the RA movements and convert them into a PE curve.
 
 Peter
+
+## Declination Backlash Info ##
+
+From Mark: (Forum thread)[https://groups.google.com/d/topic/open-phd-guiding/8Eb_TCTeaVg/discussion]
+
+Hi Group,
+my mount is new, purchased in January of this year.  It features the spring loaded DEC and RA drives, and is likely the last iteration by Celestron.  I raised a question to their tech group about reducing DEC backlash, specifically with the mechanical adjustments.  The following is their partial response and deals strictly with using the softwares to mitigate the backlash.  While not what I was looking for, it appears to be a thoughtful response.
+
+QUOTE FROM CELESTRON:
+
+"We consider acceptable backlash to be within 3 seconds of delay when reversing directions at rate 3. Rate 3 is 4x sidereal speed. Of course this will translate into a very long delay when autoguiding at ½ sidereal.
+
+Concerning ½ sidereal speed for autoguiding:
+The default guide rate is set to ½ sidereal which in most cases is too slow. This is further compounded by the existing backlash, which explains why PHD2 reports such a large amount of Dec backlash. There are 3 ways to combat this before making any mechanical adjustment:
+
+1\.      Adjust the autoguide rate in the NexStar+ hand control from 50 (default) to 99 for R.A. and especially Dec. This will double the autoguide speed, making autoguide movements much more responsive. Auto guide aggression rates can always be changed in PHD2 while guiding, so it’s better to start with the maximum responsiveness.
+
+2\.      Despite the suggested calibration step size in PHD2, increase the calibration step 50% or so. For example, if it was 100ms, increase to 150ms. This will cause larger movements to help complete the calibration process. Otherwise, PHD2 may iterate 20, 30 or more calibration steps in Dec which can make for a messy calibration. If the steps are too large it can be toned down later.
+
+3\.      Finally, identify which direction the Dec drift is in. This can be done by turning Dec aggression to 0 while guiding, or running the drift align procedure in PHD2. Once you identify which direction Dec is drifting in, disengage Dec guiding in the other direction (in the “brain” advanced settings of PHD2). Once you do this, Dec backlash no longer becomes a factor. Unless polar alignment is absolutely perfect, we will see a trend in Dec drift. This is actually advantageous so that we can keep Dec moving to one side of the gear backlash. ".
+
+END QUOTE
+
+Thanks,
+Mark
