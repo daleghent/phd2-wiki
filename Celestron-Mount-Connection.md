@@ -58,7 +58,7 @@ Peter
 
 ## Declination Backlash Info ##
 
-From Mark: [PHD2 forum thread](https://groups.google.com/d/topic/open-phd-guiding/8Eb_TCTeaVg/discussion)
+From Mark: ([PHD2 forum thread](https://groups.google.com/d/topic/open-phd-guiding/8Eb_TCTeaVg/discussion))
 
 Hi Group,
 my mount is new, purchased in January of this year.  It features the spring loaded DEC and RA drives, and is likely the last iteration by Celestron.  I raised a question to their tech group about reducing DEC backlash, specifically with the mechanical adjustments.  The following is their partial response and deals strictly with using the softwares to mitigate the backlash.  While not what I was looking for, it appears to be a thoughtful response.
