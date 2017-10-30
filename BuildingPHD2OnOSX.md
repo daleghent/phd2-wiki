@@ -36,50 +36,6 @@ make install
 
 > an easy way to install gettext is to install [Mac Ports](https://www.macports.org/install.php), then ```port install gettext```
 
-#### Install the INDI client library.
-
-We have a pre-built library that can be used, or you can build from source.
-
-  * option 1: install pre-built library
-
-```
-curl -O https://openphdguiding.org/indiclient-e1edfb66-OSX-i386.tar.gz
-sudo tar xfz indiclient-e1edfb66-OSX-i386.tar.gz -C /opt/local
-```
-
-  * option 2: build INDI client from source
-
-      * install macports
-      * configure macports to build i386 binaries by adding the following line to `/opt/local/etc/macports/macports.conf`
-
-```
-build_arch i386
-```
-
-  *
-    * install the INDI client build prerequisites:
-
-```
-sudo port install cfitsio
-```
-
-  *
-    * build the INDI client library:
-
-```
-git clone https://github.com/indilib/indi.git
-mkdir indi_client_build
-cd indi_client_build
-cmake -DCMAKE_INSTALL_PREFIX=/opt/local \
-  -DCMAKE_OSX_DEPLOYMENT_TARGET="10.9" \
-  -DCMAKE_OSX_ARCHITECTURES=i386 \
-  -DINDI_BUILD_SERVER=OFF -DINDI_BUILD_DRIVERS=OFF \
-  -DINDI_BUILD_CLIENT=ON -DINDI_BUILD_QT5_CLIENT=OFF \
-  . ../indi/libindi
-make
-sudo make install
-```
-
 #### Get the phd2 source code from GitHub
 
 ```git clone https://github.com/OpenPHDGuiding/phd2.git```
