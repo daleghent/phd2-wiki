@@ -6,6 +6,7 @@ When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm P
 |-----|-----|--------------------|
 |Astro-Physics|1100GTO|382.95|
 |Celestron|CGEM|478.689|
+|Celestron|CPC|478.6893918|
 |iOptron|IEQ45PRO|336.6|
 |Losmandy|G11|239.34|
 |Losmandy|G11T|318.1262611|
