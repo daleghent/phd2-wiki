@@ -214,7 +214,7 @@ This event corresponds to a line in the PHD Guide Log. The event is sent for eac
 |:----------|:-----|:------------|
 |Frame      |number|The frame number; starts at 1 each time guiding starts|
 |Time       |number| the time in seconds, including fractional seconds, since guiding started|
-|mount      |string|the name of the mount|
+|Mount      |string|the name of the mount|
 |dx         |number|the X-offset in pixels|
 |dy         |number|the Y-offset in pixels|
 |RADistanceRaw|number|the RA distance in pixels of the guide offset vector|
