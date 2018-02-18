@@ -158,6 +158,12 @@ Looping exposures has stopped.
 
 (no event attributes)
 
+### `SettleBegin` ###
+
+Sent when settling begins after a `dither` or `guide` method invocation.
+
+(no event attributes)
+
 ### `Settling` ###
 
 Sent for each exposure frame after a `dither` or `guide` method invocation until guiding has settled.
