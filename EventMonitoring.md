@@ -228,9 +228,9 @@ This event corresponds to a line in the PHD Guide Log. The event is sent for eac
 |RADistanceGuide|number|the guide algorithm-modified RA distance in pixels of the guide offset vector|
 |DecDistanceGuide|number|the guide algorithm-modified Dec distance in pixels of the guide offset vector|
 |RADuration |number|the RA guide pulse duration in milliseconds|
-|RADirection|string|"E" or "W"   |
+|RADirection|string|"East" or "West"   |
 |DECDuration|number|the Dec guide pulse duration in milliseconds|
-|DECDirection|string|"S" or "N"   |
+|DECDirection|string|"South" or "North"   |
 |StarMass   |number|the Star Mass value of the guide star|
 |SNR        |number|the computed Signal-to-noise ratio of the guide star|
 |AvgDist    |number|a smoothed average of the guide distance in pixels (equivalent to value returned by socket server MSG\_REQDIST)|
