@@ -4,7 +4,7 @@ This page describes how to set up a build environment from scratch on MS-Windows
 
   1. Install CMake
   1. Get the Visual Studio C++ compiler
-  1. Install Visual Leak Detector
+  1. Install Visual Leak Detector (optional)
   1. Install wxWidgets
   1. Install opencv
   1. Get the PHD2 source code
@@ -29,7 +29,7 @@ Visual Studio 2013 requires Windows 7 SP1 or later; it will not install on Windo
 
 Both are free but will require you to register with Microsoft after about a month.
 
-3. Download and install Visual Leak Detector (VLD) Version 2.3.0 from
+3. (Optional) Download and install Visual Leak Detector (VLD) Version 2.3.0 from
 
 > https://vld.codeplex.com/
 
