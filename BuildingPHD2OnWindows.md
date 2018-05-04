@@ -29,16 +29,9 @@ Visual Studio 2013 requires Windows 7 SP1 or later; it will not install on Windo
 
 Both are free but will require you to register with Microsoft after about a month.
 
-3. (Optional) Download and install Visual Leak Detector (VLD) Version 2.3.0 from
+3. (Optional) Download and install Visual Leak Detector (VLD) from
 
-> https://vld.codeplex.com/
-
-The VC++ project files assume you have VLD installed in the default
-location:
-
-> C:\Program Files (x86)\visual leak detector\
-
-so make sure you install it there. The installer will ask if you want to automatically add its directory into the PATH environment string, and you should answer ‘yes.’
+> https://github.com/KindDragon/vld/releases
 
 4. Download wxWidgets 3.0.2 from
 
