@@ -95,6 +95,6 @@ For convenience, there is a batch file containing those commands in the top-leve
 
 8. Build and run PHD2.
 
-Open the solution phd.sln in the tmp directory. Build the ALL\_BUILD project in the solution using the Debug and Release configurations.
+Open the solution phd2.sln in the tmp directory. Build the ALL\_BUILD project in the solution using the Debug and Release configurations.
 
 You will see some warnings when building the cfitsio library, but those can be safely ignored. Everything else should compile cleanly without warnings or errors.
