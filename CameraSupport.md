@@ -31,7 +31,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Starlight Xpress cameras | **Yes** | **Yes** | **Yes** |[SX info](#sx)|
 | The Imaging Source cameras | **Yes** | **Yes** | **Yes** | On Windows select "Windows WDM-style webcam" or use the [TIS ASCOM camera driver](http://www.deepsky-online.com/). For OSX and Linux, use the [TIS INDI Driver](http://www.indilib.org/devices/ccds/imaging-source-ccd.html). OSX also has a builtin driver (DCAM Firewire). |
 | Windows WDM-style webcams | **Yes** | No | No |  |
-| ZWO ASI cameras| **Yes** | **Yes** | **Yes** | |
+| ZWO ASI cameras| **Yes** | **Yes** | **Yes** |[ZWO info](#sx)|
 
 <a name=sbig></a>
 ### SBIG Cameras ###
@@ -41,3 +41,9 @@ SBIG cameras only allow a single application at a time to access the camera. If 
 <a name=sx></a>
 ### Starlight Xpress Cameras ###
 On Windows you can connect to your SX camera in two ways: with the ASCOM driver or the PHD2 built-in driver, "Starlight Xpress SXV".  If you are using the ASCOM driver and want to use a Bad-pixel map in PHD2, then make sure that you disable the ASCOM driver options Square Lodestar Pixels and Gaussian Blur as these options will interfere with PHD2 being able to identify hot pixels.
+
+<a name=zwo></a>
+### ZWO Cameras ###
+ZWO ASI cameras are supported natively on Windows, Mac, and Linux.
+The cameras can also be accessed with ASCOM or INDI camera drivers.
+On Linux, the USB 2.0 cameras may require that you flash the firmware version labeled "compatible" [Forum Thread](https://groups.google.com/d/msg/open-phd-guiding/u0qpmEDOxPI/tR2NeOpMAwAJ).
