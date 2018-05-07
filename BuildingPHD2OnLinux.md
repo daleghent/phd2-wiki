@@ -36,6 +36,14 @@ PHD2 requires a version of INDI newer than 2017/07/19, or a stable version 1.5.0
   cmake ..
 ```
 
+By default PHD2 incorporates binary drivers from some camera manufacturers (QHY and ZWO). If you would prefer to exclude binary drivers and produce a PHD2 binary based only on open source code, use this cmake command:
+
+```
+  mkdir -p tmp
+  cd tmp
+  cmake -DOPENSOURCE_ONLY=1 ..
+```
+
   * build phd2
 
 ```
