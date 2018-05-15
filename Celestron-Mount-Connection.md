@@ -10,20 +10,22 @@ From Peter Wolsley: ([PHD2 forum thread](https://groups.google.com/d/msg/open-ph
 
 Bharath,
 
-I own a Celestron CGEM 800 and I think I know what your issue is.  It has to do with the purpose of Nexremote and how it conflicts with your handcontroller.  Celestron developed the Nexremote application to be a full replacement of the functionality of your handcontroller. Nexremote is a software emulator of the exact same firmware contained in your hardware handcontroller. This includes alignment and calibration of your CGEM.  A very important conflict needs to be kept in mind. 
+I own a Celestron CGEM 800 and I think I know what your issue is.  It has to do with the purpose of Nexremote and how it conflicts with your hand-controller.  Celestron developed the Nexremote application to be a full replacement of the functionality of your hand-controller. Nexremote is a software emulator of the exact same firmware contained in your hardware hand-controller. This includes alignment and calibration of your CGEM.  A very important conflict needs to be kept in mind. 
 
-If you wish to use the Nexremote app, it will invalidate any alignment/calibration performed with the hardware handcontroller forcing you to align and calibrate your mount using the Nexremote app.  It's almost as if you can only use the hardware handcontroller or Nexremote... never both.
+If you wish to use the Nexremote app, it will invalidate any alignment/calibration performed with the hardware hand-controller forcing you to align and calibrate your mount using the Nexremote app.  It's almost as if you can only use the hardware hand-controller or Nexremote... never both.
  
 So how are you suppose to get everything running correctly?  There are two methods available:  
 Let's assume the following:  
-Your hardware handcontroller is plugged into your mount and it's serial port cable is plugged into a USB to serial converter.  Your computer says that this USB to serial converter is connected to **COM3**.  When you run Nexremote you have it's virtual port set to **COM4**.
+Your hardware hand-controller is plugged into your mount and it's serial port cable is plugged into a USB to serial converter.  Your computer says that this USB to serial converter is connected to **COM3**.  When you run Nexremote you have it's virtual port set to **COM4**.
  
-#### Method 1...Using only the handcontroller ####
+#### Method 1...Using only the hand-controller ####
 a)Configure the Celestron ASCOM driver COM port to COM3.  
-b)Align and Calibrate your mount using the hardware handcontroller.  
+b)Align and Calibrate your mount using the hardware hand-controller.  
 c)Align using 2 stars and calibrate using 4 stars.  
-d)Polar align (the ASPA method) using the hardware handcontroller.  
+d)Polar align (the ASPA method) using the hardware hand-controller.  
 e)Start PHD2 and connect your mount using the Celestron Telescope Driver (ASCOM).  
+
+Ed note:  Celestron hand-controllers made after 4/2016 are reported to have a built-in USB to serial adapter.  If the socket on the hand-controller is a mini-USB instead of an RJ-11 (telephone type), you can run a USB cable directly from the computer to the hand-controller.  A separate USB-serial adapter is not needed in that case.  However, the computer will still see this as a serial port so you will need to determine and set the correct COM port number as described above.  Once the physical cable connection is made, you can use the Windows device manager to see what the port assignment is - just expand the 'ports' section in the device manager window.
 
 You will now be able to use PHD2. You must NOT use Nexremote while using this method.
  
@@ -35,7 +37,7 @@ d)Align using 2 stars and calibrate using 4 stars.
 e)Polar align (the ASPA method) using Nexremote.  
 f)Start PHD2 and connect your mount using the Celestron Telescope Driver (ASCOM).  
 
-You will now be able to use PHD2. You can only use the slew buttons on the hardware handcontroller (if you wish) when using this method.
+You will now be able to use PHD2. You can only use the slew buttons on the hardware hand-controller (if you wish) when using this method.
 
 I hope this helps
 
