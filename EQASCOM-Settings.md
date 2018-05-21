@@ -6,7 +6,7 @@ Open the ASCOM Driver settings by clicking here
 
 ![Mount Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_1.gif)
 
-Enable ASCOM Pulse Guiding here
+Enable ASCOM Pulse Guiding and verify that SideOfPier is Pointing (ASCOM)
 
 ![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_2.gif)
 
