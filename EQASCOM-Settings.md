@@ -8,7 +8,7 @@ Open the ASCOM Driver settings by clicking here
 
 Enable ASCOM Pulse Guiding and verify that SideOfPier is Pointing (ASCOM)
 
-![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_2.gif)
+![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2018/05/eqascom_2.gif)
 
 Once you have connected the mount and before you calibrate or guide in PHD2, update your EQASCOM settings
 
