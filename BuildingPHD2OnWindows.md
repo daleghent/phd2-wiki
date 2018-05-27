@@ -35,7 +35,7 @@ Both are free but will require you to register with Microsoft after about a mont
 
 4. Download wxWidgets 3.0.4 from
 
-> http://sourceforge.net/projects/wxwindows/files/
+> https://www.wxwidgets.org/downloads/
 
 PHD2 requires wxWidgets static libraries, not DLLs, so you need to build them as follows.
 
@@ -54,7 +54,7 @@ msbuild wx_vc12.sln /p:configuration=Release /p:platform=win32 /m:8
 ```
 
 
-> _Extra Info_ wxWidgets sources are downloaded as a zip file. You should stick with the 3.0.4 release used in the current PHD2 build. On the wxWidgets site, go to the downloads page, then select ‘releases’ at the upper left to find the earlier release package you need.  Once it’s downloaded, extract into a location you want.
+> _Extra Info_ wxWidgets sources are downloaded as a zip file. You should stick with the 3.0.4 release used in the current PHD2 build. On the wxWidgets site, go to the downloads page and find the correct release.  If you don't see it there, go to the home page for wxWidgets and look in the 'News' paragraphs.  Once it’s downloaded, extract into a location you want.
 
 > Then set the WXWIN environment variable as follows:  suppose you’ve installed wxWidgets in a folder c:\dev\CPP\_Libs\wxWidgets-3.0.4\.  Then the environment variable should look like this:
 
