@@ -24,7 +24,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Orion Starshoot DSCI | **Yes** | No | No |  |
 | Orion StarShoot Planetary Imager and Autoguider | **Yes** | No | No |  |
 | QHY5 | No | No | **Yes** | |
-| QHY Cameras | **Yes** | **Yes** | **Yes** | (cameras more recent than the QHY5) |
+| QHY Cameras | **Yes** | **Yes** | **Yes** | (cameras more recent than the QHY5)<br>[QHY Support Info](http://www.qhyccd.com/file/repository/PDF/HowToAvoidCameraHangissue(QHY5L-II)_EN.pdf) |
 | SAC4-2 | **Yes** | No | No |  |
 | SBIG cameras | **Yes** | **Yes** | No | [SBIG info](#sbig) |
 | Simulator | **Yes** | **Yes** | **Yes** | PHD2's built-in camera simulator, great for development and learning PHD2 |
