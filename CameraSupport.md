@@ -20,7 +20,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Mallincam SkyRaider | **Yes** | No | No | Connects as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html)) |
 | Meade DSI I, II, or III | **Yes** | **Yes** | No |  |
 | OpenCV webcam | **Yes** | No | No |  |
-| Orion StarShoot Autoguider | **Yes** | **Yes** | **Yes** (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) |  |
+| Orion StarShoot Autoguider | **Yes** | **Yes** | **Yes** (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) | Note: [How to connect to an SSAG with corrupted firmware](SSAG_VID_PID_Override) |
 | Orion Starshoot DSCI | **Yes** | No | No |  |
 | Orion StarShoot Planetary Imager and Autoguider | **Yes** | No | No |  |
 | QHY5 | No | No | **Yes** | |
