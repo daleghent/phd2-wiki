@@ -11,18 +11,18 @@ The available commands are given in the table below. The command and response ar
 | **Command name** | **Value** | **Description** | **Response** |
 |:-----------------|:----------|:----------------|:-------------|
 | MSG\_PAUSE       | 1         | Pause guiding. Camera exposures continue to loop if they are already looping.| 0            |
-| MSG\_RESUME      | 2         | Resume guiding if it was posed, otherwise no effect.| 0            |
-| MSG\_MOVE1       | 3         | Dither a random amount, up to +/- 0.5 x dither\_scale | Camera exposure time in seconds, but not less than 1 |
-| MSG\_MOVE2       | 4         | Dither a random amount, up to +/- 1.0 x dither\_scale| Camera exposure time in seconds, but not less than 1|
-| MSG\_MOVE3       | 5         | Dither a random amount, up to +/- 2.0 x dither\_scale| Camera exposure time in seconds, but not less than 1|
+| MSG\_RESUME      | 2         | Resume guiding if it was paused, otherwise no effect.| 0            |
+| MSG\_MOVE1       | 3         | Dither a random amount, up to +/- 0.5 x dither\_scale |  Camera exposure time in seconds, but not less than 1 |
+| MSG\_MOVE2       | 4         | Dither a random amount, up to +/- 1.0 x dither\_scale| Camera exposure time in seconds, but not less than 1 |
+| MSG\_MOVE3       | 5         | Dither a random amount, up to +/- 2.0 x dither\_scale| Camera exposure time in seconds, but not less than 1 |
 | MSG\_IMAGE       | 6         | (not currently implemented in PHD2) | 1            |
 | MSG\_GUIDE       | 7         | (not currently implemented in PHD2)| 1            |
 | MSG\_CAMCONNECT  | 8         | (not currently implemented in PHD2)| 1            |
 | MSG\_CAMDISCONNECT | 9         | (not currently implemented in PHD2)| 1            |
 | MSG\_REQDIST     | 10        | Request guide error distance| The current guide error distance in units of 1/100 pixel. Values > 255 are reported as 255. |
 | MSG\_REQFRAME    | 11        | (not currently implemented in PHD2)| 1            |
-| MSG\_MOVE4       | 12        | Dither a random amount, up to +/- 3.0 x dither\_scale| Camera exposure time in seconds, but not less than 1|
-| MSG\_MOVE5       | 13        | Dither a random amount, up to +/- 5.0 x dither\_scale| Camera exposure time in seconds, but not less than 1|
+| MSG\_MOVE4       | 12        | Dither a random amount, up to +/- 3.0 x dither\_scale| Camera exposure time in seconds, but not less than 1 |
+| MSG\_MOVE5       | 13        | Dither a random amount, up to +/- 5.0 x dither\_scale| Camera exposure time in seconds, but not less than 1 |
 | MSG\_AUTOFINDSTAR | 14        | Auto-select a guide star. | 1 if a star was selected, 0 if not |
 | MSG\_SETLOCKPOSITION | 15        | Read 2 16-bit integers, x and y,from the socket and set the lock position to (x,y) | 0            |
 | MSG\_FLIPRACAL   | 16        | Flip RA calibration data | 1 if RA calibration data was flipped, 0 otherwise|
