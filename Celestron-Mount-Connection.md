@@ -3,6 +3,7 @@
 * [Basic Connection Info](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#basic-connection-info)
 * [PECTool Connection](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#pectool-connection)
 * [Declination Backlash Info](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#declination-backlash-info)
+* [Guiding an SE Mount](https://github.com/OpenPHDGuiding/phd2/wiki/Celestron-Mount-Connection/#guiding-an-se-mount)
 
 ## Basic Connection Info ##
 
@@ -82,3 +83,8 @@ END QUOTE
 
 Thanks,
 Mark
+
+## Guiding an SE Mount ##
+
+An informative post about the Celestron SE Mount
+https://groups.google.com/d/msg/open-phd-guiding/6O-GjFGnUsk/SfyUd0BkDAAJ
