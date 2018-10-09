@@ -7,5 +7,8 @@ If your mount is missing from the list, please run the Meridian Flip Calibration
 |Astro-Physics|Any|No||
 |Celestron|Any|No|Confirmed for CGX and CGE models, probably the same for all Celestron mounts with the Nexstar+ hand control|
 |iOptron|CEM60|No|ASCOM Driver 5.62 does not report side of pier; version 5.63 is OK|
+|INDI - EQMOD|Any|No||
+|EQMOD - ASCOM|Any|No||
 |Losmandy|Gemini-2|No||
-|Software Bisque|Any|Yes||
+|Software Bisque|Any|**Yes**||
+|Takahashi|Any|No|confirmed for EM-400 with the TemmaLite v6.2.4 driver|
