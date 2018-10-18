@@ -60,6 +60,21 @@ The lock position has been established.
 | X         | number | lock position X-coordinate |
 | Y         | number | lock position Y-coordinate |
 
+### `Calibrating` ###
+
+Calibration step
+
+| Attribute | Type | Description |
+|:----------|:-----|:------------|
+| Mount     | string | name of the mount that was calibrated |
+| dir       | string | calibration direction (phase) |
+| dist      | number | distance from starting location |
+| dx        | number | x offset from starting position |
+| dy        | number | y offset from starting position |
+| pos       | [number,number] | star coordinates |
+| step      | number | step number |
+| State     | string | calibration status message |
+
 ### `CalibrationComplete` ###
 
 Calibration completed successfully.
