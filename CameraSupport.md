@@ -6,8 +6,9 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 
 |Camera|Windows|OSX|Linux|Notes|
 |------|:-----:|:-:|:---:|-----|
-| Altair Cameras | **Yes** | No | No |  |
+| Altair Cameras | **Yes** | No | No | Native mode available for Windows, or use Altair ASCOM driver |
 | ASCOM Cameras| **Yes** | No | No | Linux/Mac available through WINDI |
+| Astromania Cameras| | | | See ToupTek below |
 | Atik 16 series | **Yes** | No | No | color and mono. If your Atik 16 camera is not recognized by PHD2, try updating to the latest drivers from Atik and try connecting as "Atik Gen3" in PHD2. |
 | Atik Gen 3  | **Yes** | No | No | color and mono |
 | CCD Labs Q-Guider | **Yes** | No | No |  |
