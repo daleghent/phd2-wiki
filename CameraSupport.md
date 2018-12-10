@@ -30,7 +30,8 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Simulator | **Yes** | **Yes** | **Yes** | PHD2's built-in camera simulator, great for development and learning PHD2 |
 | Starlight Xpress cameras | **Yes** | **Yes** | **Yes** |[SX info](#sx)|
 | The Imaging Source cameras | **Yes** | **Yes** | **Yes** | On Windows select "Windows WDM-style webcam" or use the [TIS ASCOM camera driver](http://www.deepsky-online.com/). For OSX and Linux, use the [TIS INDI Driver](http://www.indilib.org/devices/ccds/imaging-source-ccd.html). OSX also has a builtin driver (DCAM Firewire). |
-| Windows WDM-style webcams | **Yes** | No | No |  |
+| ToupTek Cameras | **Yes** | No | No | [Touptek info](#touptek)|
+| Windows WDM-style webcams | **Yes** | No | No | |
 | ZWO ASI cameras| **Yes** | **Yes** | **Yes** |[ZWO info](#sx)|
 
 <a name=sbig></a>
@@ -47,3 +48,8 @@ On Windows you can connect to your SX camera in two ways: with the ASCOM driver 
 ZWO ASI cameras are supported natively on Windows, Mac, and Linux.
 The cameras can also be accessed with ASCOM or INDI camera drivers.
 On Linux, the USB 2.0 cameras may require that you flash the firmware version labeled "compatible" [Forum Thread](https://groups.google.com/d/msg/open-phd-guiding/u0qpmEDOxPI/tR2NeOpMAwAJ).
+
+<a name=touptek></a>
+### ToupTek Cameras ###
+
+On Windows ToupTek camera support is built-in to PHD2, or you can use the ToupTek's ASCOM camera driver.  Linux native support should also work, but it has not been tested yet.  ToupTek stopped providing a 32-bit Mac version of their SDK, so if you are a Mac user please contact ToupTek and encourage them to resume their support for 32-bit Mac.
