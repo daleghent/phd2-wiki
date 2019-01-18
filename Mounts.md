@@ -12,6 +12,7 @@ See also: [Reverse Dec output after meridian flip](Reverse-Dec-output-after-meri
 | Equinox 6 | No | **Yes** | No |  |
 | GC USB ST4 | No | **Yes** | No |  |
 | INDI mounts | **Yes** | **Yes** | **Yes** | [List of INDI mounts](http://www.indilib.org/devices/telescopes.html) |
+| Meade mounts | **Yes** | **Yes** | **Yes** | Use ASCOM or INDI driver. ASCOM must use POTH to allow the mount to connect to multiple apps, e.g. PHD2 & planetarium app |
 | Shoestring GPINT | **Yes** | No | No |  |
 | Shoestring GPUSB | **Yes** | **Yes** | No |  |
 | On-camera | **Yes** | **Yes** | **Yes** | for supported guide camera with ST4 port |
