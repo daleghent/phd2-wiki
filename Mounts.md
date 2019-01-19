@@ -6,10 +6,11 @@ See also: [Reverse Dec output after meridian flip](Reverse-Dec-output-after-meri
 
 |Mount|Windows|OSX|Linux|Notes|
 |-----|:-----:|:-:|:--:|-----|
-| ASCOM mounts| **Yes** | No | No | [EQASCOM Info](EQASCOM-Settings)<br>[SkyX Info](SkyX-Settings) |
-| Celestron Mounts | | | | [Celestron Info](Celestron-Mount-Connection) |
+| ASCOM mounts| **Yes** | No | No | [EQASCOM Info](EQASCOM-Settings)<br>[SkyX ASCOM Info](SkyX-Settings) |
+| Celestron Mounts | | | | Use ASCOM or INDI. [Celestron Info](Celestron-Mount-Connection) |
 | EQMAC | No | **Yes** | No |  |
 | Equinox 6 | No | **Yes** | No |  |
+| EQMOD | **Yes** | **Yes** | **Yes** | Use ASCOM or INDI. [EQASCOM Info](EQASCOM-Settings) |
 | GC USB ST4 | No | **Yes** | No |  |
 | INDI mounts | **Yes** | **Yes** | **Yes** | [List of INDI mounts](http://www.indilib.org/devices/telescopes.html) |
 | Meade mounts | **Yes** | **Yes** | **Yes** | Use ASCOM or INDI driver. ASCOM must use POTH to allow the mount to connect to multiple apps, e.g. PHD2 & planetarium app |
