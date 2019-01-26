@@ -10,7 +10,7 @@ sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static l
 
 ### Ubuntu ###
 
-  * install dependencies (tested on 14.04 to 15.10)
+  * install dependencies (tested on 14.04 to 18.10)
 ```
 sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
@@ -56,7 +56,20 @@ By default PHD2 incorporates binary drivers from some camera manufacturers (QHY 
   ./phd2
 ```
 
+### Note for 32bit i386 system ###
 
+There is a bug in the Eigen library that prevent it to work correctly on i386 system when compiled with GCC 7 or newer. [See bug report](https://github.com/OpenPHDGuiding/phd2/issues/608).
+
+If your distribution include GCC 7 by default the solution is to compile PHD2 with GCC 6.
+
+  * Install GCC 6
+```
+  sudo apt-get install gcc-6 g++-6
+```
+  * Run cmake by specifying the compiler to use
+```
+  cmake -DCMAKE_C_COMPILER=gcc-6 -DCMAKE_CXX_COMPILER=g++-6 ..
+```
 
 ---
 
