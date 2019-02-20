@@ -4,10 +4,9 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 
 |AO|Windows|OSX|Linux|Notes|
 |------|:-----:|:-:|:---:|-----|
-| SBIG AO | No | No | No | [note](#SBIG) |
-|Starlight Xpress AO|  **Yes** | **Yes** | **Yes** | |
-|INDI AO| **Yes** | **Yes** | **Yes** | SX AO only |
+| SBIG AO (INDI) | **Yes** | **Yes** | **Yes** | [note](#SBIG) |
+| Starlight Xpress AO |  **Yes** | **Yes** | **Yes** | natively supported by PHD2,<br>also accessible via INDI |
 
 <a name="SBIG"></a>
 ### SBIG AO ###
-The SBIG Driver only allows a single application to connect to _all_ SBIG gear. If your imaging application is connected to an SBIG camera, then PHD2 will not be able to connect to the AO.
+The SBIG Driver only allows a single application to connect to _all_ SBIG gear. If your imaging application is connected to an SBIG camera, then PHD2 cannot connect to the AO.  The SBIG AO is however accessible via INDI.
