@@ -1,5 +1,3 @@
-
-
 # Introduction #
 
 OpenPHD allows programs to connect to PHD to actively monitor guiding status and control PHD. This allows clients to do things like:
@@ -346,6 +344,7 @@ Set camera exposure (error):
 |`get_dec_guide_mode`|none      |string: "Off"/"Auto"/"North"/"South"|               |
 |`get_exposure`|none      |integer: exposure time in milliseconds|               |
 |`get_exposure_durations`|none      |array of integers: the list of valid exposure times in milliseconds |               |
+|`get_guide_output_enabled`|none      |boolean: true when guide output is enabled|               |
 |`get_lock_position`|none      |array: `[x, y]` coordinates of lock position, or `null` if lock position is not set |               |
 |`get_lock_shift_enabled`|none      |boolean: true if lock shift enabled|               |
 |`get_lock_shift_params`|none      |example: ` {"enabled":true,"rate":[1.10,4.50],"units":"arcsec/hr","axes":"RA/Dec"} `|               |
@@ -365,6 +364,7 @@ Set camera exposure (error):
 |`set_connected`|boolean: connect| integer (0) | connect or disconnect all equipment |
 |`set_dec_guide_mode`|string: mode ("Off"/"Auto"/"North"/"South") | integer(0) |               |
 |`set_exposure`|integer: exposure time in milliseconds| integer (0)|
+|`set_guide_output_enabled`|enabled: boolean      | integer(0) | Enables or disables guide output |
 |`set_lock_position`|X: float, Y: float, EXACT: boolean (optional, default = true) | integer (0) | When EXACT is `true`, the lock position is moved to the exact given coordinates. When `false`, the current position is moved to the given coordinates and if a guide star is in range, the lock position is set to the coordinates of the guide star. |
 |`set_lock_shift_enabled`|boolean: enable lock shift|integer (0)|               |
 |`set_lock_shift_params`|` {"rate":[XRATE,YRATE],"units":UNITS,"axes":AXES} `|integer (0)| UNITS = "arcsec/hr" or "pixels/hr"; AXES = "RA/Dec" or "X/Y"|
