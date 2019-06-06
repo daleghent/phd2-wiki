@@ -21,13 +21,13 @@ We highly recommend installing cmake version 3.5.2 as that is the version used b
 
 2. If you do not yet have a version of Visual Studio 2013 for Windows Desktop then download it from
 
-> http://www.visualstudio.com/en-us/downloads
+> https://visualstudio.microsoft.com/vs/older-downloads/
 
-The download you want is Visual Studio Express 2013 for Windows Desktop or Visual Studio Community 2013.
+The download you want is **Visual Studio Express 2013 for Windows Desktop** or **Visual Studio Community 2013**.
 
 Visual Studio 2013 requires Windows 7 SP1 or later; it will not install on Windows XP.
 
-Both are free but will require you to register with Microsoft after about a month.
+Both are free but will require you to register with Microsoft.
 
 3. (Optional) Download and install Visual Leak Detector (VLD) from
 
@@ -39,9 +39,9 @@ Both are free but will require you to register with Microsoft after about a mont
 
 PHD2 requires wxWidgets static libraries, not DLLs, so you need to build them as follows.
 
-Install wxWidgets into <wx install path>, typically C:\wxWidgets-3.0.4.
+Install wxWidgets into &lt;wx install path&gt;, typically C:\wxWidgets-3.0.4.
 
-Set a WXWIN environment variable to point to <wx install path>. For example:
+Set a WXWIN environment variable to point to &lt;wx install path&gt;. For example:
 
 > WXWIN = C:\wxWidgets-3.0.4
 
