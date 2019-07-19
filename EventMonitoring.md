@@ -43,6 +43,7 @@ Describes the PHD and message protocol versions.
 | `PHDVersion` | string | the PHD version number |
 | `PHDSubver` | string | the PHD sub-version number |
 | `MsgVersion` | number | the version number of the event message protocol. The current version is 1. We will bump this number if the message protocol changes. |
+| `OverlapSupport` | boolean | true if PHD support receiving RPC order while previous order has not been completed (default for latest version) |
 
 Example
 ```
