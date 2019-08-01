@@ -74,7 +74,7 @@ The other night I entered 480 seconds.  Within 10 minutes, PHD2 "found" the 367 
  
 That same night I accidentally entered 1480 seconds in PHD2 (I was trying to enter 480 seconds), and it found a 700 second period. It shows up on 5 out of 6 unguided sessions, so I think that is real. My guiding was not as good as when it found the 367 second period, but still better than hysteresis guiding.
 
-https://www.cloudynights.com/uploads/monthly_08_2019/post-227322-0-41672400-1564685668_thumb.jpg
+![https://www.cloudynights.com/topic/670930-combining-eqmod-with-synscan-ppec-and-phd2-predictive-pec/?p=9543776#](https://www.cloudynights.com/topic/670930-combining-eqmod-with-synscan-ppec-and-phd2-predictive-pec/?p=9543776#)
 
 ![https://www.cloudynights.com/uploads/monthly_08_2019/post-227322-0-79859000-1564685792_thumb.jpg](https://www.cloudynights.com/uploads/monthly_08_2019/post-227322-0-79859000-1564685792_thumb.jpg)
  
