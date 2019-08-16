@@ -50,10 +50,16 @@ By default PHD2 incorporates binary drivers from some camera manufacturers (QHY 
   make
 ```
 
-  * run phd2
+once phd2 is built you can either runn phd2 from the local build directory
 
 ```
   ./phd2
+```
+
+or install phd2 onto the system
+
+```
+  sudo make install
 ```
 
 ### Note for 32bit i386 system ###
