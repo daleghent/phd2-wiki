@@ -4,36 +4,37 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 
 **NOTE**: If you do not see your camera in the list below, or if it is marked as not supported, you may still be able to use it with PHD2.  If the camera has an available ASCOM driver (Windows) or an INDI driver (Linux), then you _can_ use the camera with PHD2.
 
-|Camera|Windows|OSX|Linux|Notes|
-|------|:-----:|:-:|:---:|-----|
-| Altair Cameras | **Yes** | **Yes** | **Yes** | Windows: native mode or use Altair ASCOM driver, or INDI<br>OSX and Linux: use INDI |
-| ASCOM Cameras| **Yes** | No | No | Linux/Mac available through WINDI |
-| Astromania Cameras| | | | See ToupTek below |
-| Atik 16 series | **Yes** | No | No | color and mono. If your Atik 16 camera is not recognized by PHD2, try updating to the latest drivers from Atik and try connecting as "Atik Gen3" in PHD2. |
-| Atik Gen 3  | **Yes** | No | No | color and mono |
-| CCD Labs Q-Guider | **Yes** | No | No |  |
-| Fishcamp Starfish | **Yes** | **Yes** | No |  |
-| i-Nova PLC-M | **Yes** | No | No | |
-| INDI Cameras| **Yes** | **Yes** | **Yes** | [INDI camera list](http://www.indilib.org/devices/ccds.html) |
-| KWIQGuider | No | **Yes** | No |  |
-| Long exposure webcams | **Yes** | No | No | USB, Parallel, or serial interface |
-| MagZero MZ-5 | **Yes** | No | No |  |
-| MallinCam SkyRaider | **Yes** | **Yes** | **Yes** | Windows: select ToupTek Camera, or connect as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html))<br>OSX: supported natively<br>Linux: Connect as ToupTek camera |
-| Meade DSI I, II, or III | **Yes** | **Yes** | No |  |
-| OpenCV webcam | **Yes** | No | No |  |
-| Orion StarShoot Autoguider | **Yes** | **Yes** | **Yes** (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) | Note: [How to connect to an SSAG with corrupted firmware](Orion-Starshoot-Autoguider-VID---PID-Override) |
-| Orion Starshoot DSCI | **Yes** | No | No |  |
-| Orion StarShoot Planetary Imager and Autoguider | **Yes** | No | No |  |
-| QHY5 | No | No | **Yes** | |
-| QHY Cameras | **Yes** | **Yes** | **Yes** | (cameras more recent than the QHY5)<br>[QHY Support Info](http://www.qhyccd.com/file/repository/PDF/HowToAvoidCameraHangissue(QHY5L-II)_EN.pdf) |
-| SAC4-2 | **Yes** | No | No |  |
-| SBIG cameras | **Yes** | **Yes** | No | [SBIG info](#sbig) |
-| Simulator | **Yes** | **Yes** | **Yes** | PHD2's built-in camera simulator, great for development and learning PHD2 |
-| Starlight Xpress cameras | **Yes** | **Yes** | **Yes** |[SX info](#sx)|
-| The Imaging Source cameras | **Yes** | **Yes** | **Yes** | On Windows select "Windows WDM-style webcam" or use the [TIS ASCOM camera driver](http://www.deepsky-online.com/). For OSX and Linux, use the [TIS INDI Driver](http://www.indilib.org/devices/ccds/imaging-source-ccd.html). OSX also has a builtin driver (DCAM Firewire). |
-| ToupTek Cameras | **Yes** | No | **Yes** | [Touptek info](#touptek)|
-| Windows WDM-style webcams | **Yes** | No | No | |
-| ZWO ASI cameras| **Yes** | **Yes** | **Yes** |[ZWO info](#sx)|
+|Camera|Windows|Mac 32-bit|Mac 64-bit|Linux|Notes|
+|------|:-----:|:--------:|:--------:|:---:|-----|
+| Altair Cameras | **Yes** | **Yes** | **Yes** | **Yes** | Windows: native mode or use Altair ASCOM driver, or INDI<br>Mac and Linux: use INDI |
+| ASCOM Cameras| **Yes** | No | No | No | Linux/Mac available through WINDI |
+| Astromania Cameras| | | | | See ToupTek below |
+| Atik 16 series | **Yes** | No | No | No | color and mono. If your Atik 16 camera is not recognized by PHD2, try updating to the latest drivers from Atik and try connecting as "Atik Gen3" in PHD2. |
+| Atik Gen 3  | **Yes** | No | No | No | color and mono |
+| CCD Labs Q-Guider | **Yes** | No | No | No |  |
+| Fishcamp Starfish | **Yes** | **Yes** | No | No |  |
+| i-Nova PLC-M | **Yes** | No | No | No | |
+| INDI Cameras| **Yes** | **Yes** | **Yes** | **Yes** | [INDI camera list](http://www.indilib.org/devices/ccds.html) |
+| KWIQGuider | No | **Yes** | **Yes** | No |  [*] Mac 64 unconfirmed |
+| Long exposure webcams | **Yes** | No | No | No | USB, Parallel, or serial interface |
+| MagZero MZ-5 | **Yes** | No | No | No |  |
+| MallinCam SkyRaider | **Yes** | **Yes** | **Yes** | **Yes** | Windows: select ToupTek Camera, or connect as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html))<br>Mac 32-bit: supported natively<br>Mac 64-bit and Linux: Connect as ToupTek camera |
+| Meade DSI I, II, or III | **Yes** | **Yes** | No | No |  |
+| Omegon Pro Cameras | **Yes** | No | **Yes** | **Yes** | [Touptek info](#touptek)|
+| OpenCV webcam | **Yes** | No | No | No |  |
+| Orion StarShoot Autoguider | **Yes** | **Yes** | **Yes** | **Yes** (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) | Note: [How to connect to an SSAG with corrupted firmware](Orion-Starshoot-Autoguider-VID---PID-Override) |
+| Orion Starshoot DSCI | **Yes** | No | No | No |  |
+| Orion StarShoot Planetary Imager and Autoguider | **Yes** | No | No | No |  |
+| QHY5 | No | No | No | **Yes** | |
+| QHY Cameras | **Yes** | **Yes** | **Yes** | **Yes** | (cameras more recent than the QHY5)<br>[QHY Support Info](http://www.qhyccd.com/file/repository/PDF/HowToAvoidCameraHangissue(QHY5L-II)_EN.pdf) |
+| SAC4-2 | **Yes** | No | No | No |  |
+| SBIG cameras | **Yes** | **Yes** | **Yes** | No | [SBIG info](#sbig) |
+| Simulator | **Yes** | **Yes** | **Yes** | **Yes** | PHD2's built-in camera simulator, great for development and learning PHD2 |
+| Starlight Xpress cameras | **Yes** | **Yes** | **Yes** | **Yes** |[SX info](#sx)|
+| The Imaging Source cameras | **Yes** | **Yes** | **Yes** | **Yes** | On Windows select "Windows WDM-style webcam" or use the [TIS ASCOM camera driver](http://www.deepsky-online.com/). For OSX and Linux, use the [TIS INDI Driver](http://www.indilib.org/devices/ccds/imaging-source-ccd.html). OSX also has a builtin driver (DCAM Firewire). |
+| ToupTek Cameras | **Yes** | No | **Yes** | **Yes** | [Touptek info](#touptek)|
+| Windows WDM-style webcams | **Yes** | No | No | No | |
+| ZWO ASI cameras| **Yes** | **Yes** | **Yes** | **Yes** |[ZWO info](#sx)|
 
 <a name=sbig></a>
 ### SBIG Cameras ###
@@ -53,4 +54,4 @@ On Linux, the USB 2.0 cameras may require that you flash the firmware version la
 <a name=touptek></a>
 ### ToupTek Cameras ###
 
-On Windows ToupTek camera support is built-in to PHD2, or you can use the ToupTek's ASCOM camera driver.  Linux native support should also work, but it has not been tested yet.  ToupTek stopped providing a 32-bit Mac version of their SDK, so if you are a Mac user please contact ToupTek and encourage them to resume their support for 32-bit Mac.
+On Windows ToupTek camera support is built-in to PHD2, or you can use the ToupTek's ASCOM camera driver.  Linux native support should also work, but it has not been tested yet.  On Mac, you'll need the 64-bit version of PHD2 as  ToupTek no longer provides SDK support for 32-bit Macs.
