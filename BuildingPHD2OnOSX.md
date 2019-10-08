@@ -1,4 +1,6 @@
-# Building PHD2 on OSX
+# Building PHD2 on macOS - 32-bit
+
+Instructions for building a 32-bit version of PHD2 that will run on macOS 10.14 Mojave or older
 
 #### Install CMake version 3.5.2
 
