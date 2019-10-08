@@ -25,8 +25,9 @@
 
   * [Translating PHD2](/OpenPHDGuiding/phd2/wiki/TranslatingPHD2) - instructions for translating PHD2 to other locales
   * [Building PHD2 On Windows](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnWindows)
-  * [Building PHD2 On OSX](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnOSX)
   * [Building PHD2 On Linux](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnLinux)
+  * [Building PHD2 On OSX 32-bit](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnOSX)
+  * [Building PHD2 On OSX 64-bit](/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnOSX64)
   * [CMake Build System](/OpenPHDGuiding/phd2/wiki/CMakeBuildSystem)
   * [Event Monitoring Interface](/OpenPHDGuiding/phd2/wiki/EventMonitoring) - how to control and monitor PHD2 from other applications
   * [Socket Server Interface](/OpenPHDGuiding/phd2/wiki/SocketServerInterface) - the old way to control PHD, supported for backward compatibility with PHD1
