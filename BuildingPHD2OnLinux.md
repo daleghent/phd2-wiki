@@ -8,9 +8,9 @@
 sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl-devel
 ```
 
-### Ubuntu ###
+### Debian-based systems (Ubuntu, Raspbian, ...) ###
 
-  * install dependencies (tested on 14.04 to 18.10)
+  * install dependencies (tested on Ubuntu 14.04 to 18.10)
 ```
 sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
