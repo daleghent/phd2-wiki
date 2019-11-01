@@ -1,16 +1,16 @@
 # Instructions for building PHD2 on Linux #
 
-## Build Dependencies ##
+## Step 1: Build Dependencies ##
 ### Fedora-like systems ###
 
-  * install dependencies (commands for a Fedora-like system; your system may vary)
+  * Install dependencies (commands for a Fedora-like system; your system may vary)
 ```
 sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl-devel
 ```
 
 ### Debian-based systems (Ubuntu, Raspbian, ...) ###
 
-  * install dependencies (tested on Ubuntu 14.04 to 18.10)
+  * Install dependencies (tested on Ubuntu 14.04 to 18.10)
 ```
 sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
@@ -19,21 +19,21 @@ sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-com
 
 PHD2 requires a version of INDI newer than 2017/07/19, or a stable version 1.5.0 or newer. If you have an Ubuntu-derived distro, use Jasem's [PPA](https://launchpad.net/~mutlaqja/+archive/ubuntu/ppa) to install the most up-to-date INDI library.  For other distros, you can build libindi from source: [instructions](https://github.com/indilib/indi).
 
-## phd2 ##
+## Step 2: Build PHD2 ##
 
-  * get the phd2 sources
+  * Get the PHD2 sources
 
 ```
   git clone https://github.com/OpenPHDGuiding/phd2.git
   cd phd2
 ```
 
-  * generate the Makefiles
+  * Generate the Makefiles
 
 ```
   mkdir -p tmp
   cd tmp
-  cmake ..
+  sudo cmake ..
 ```
 
 By default PHD2 incorporates binary drivers from some camera manufacturers (QHY and ZWO). If you would prefer to exclude binary drivers and produce a PHD2 binary based only on open source code, use this cmake command:
@@ -41,22 +41,22 @@ By default PHD2 incorporates binary drivers from some camera manufacturers (QHY 
 ```
   mkdir -p tmp
   cd tmp
-  cmake -DOPENSOURCE_ONLY=1 ..
+  sudo cmake -DOPENSOURCE_ONLY=1 ..
 ```
 
-  * build phd2
+  * Build PHD2
 
 ```
-  make
+  sudo make
 ```
 
-once phd2 is built you can either runn phd2 from the local build directory
+Once PHD2 is built, you can either run PHD2 from the local build directory
 
 ```
   ./phd2
 ```
 
-or install phd2 onto the system
+or install PHD2 onto the system
 
 ```
   sudo make install
@@ -74,7 +74,7 @@ If your distribution include GCC 7 by default the solution is to compile PHD2 wi
 ```
   * Run cmake by specifying the compiler to use
 ```
-  cmake -DCMAKE_C_COMPILER=gcc-6 -DCMAKE_CXX_COMPILER=g++-6 ..
+  sudo cmake -DCMAKE_C_COMPILER=gcc-6 -DCMAKE_CXX_COMPILER=g++-6 ..
 ```
 
 ---
