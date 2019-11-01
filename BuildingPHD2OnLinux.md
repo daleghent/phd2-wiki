@@ -5,14 +5,16 @@
 
   * Install dependencies (commands for a Fedora-like system; your system may vary)
 ```
-sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static libnova-devel zlib-devel libusb-devel libcurl-devel
+sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static \
+   libnova-devel zlib-devel libusb-devel libcurl-devel
 ```
 
 ### Debian-based systems (Ubuntu, Raspbian, ...) ###
 
   * Install dependencies (tested on Ubuntu 14.04 to 18.10 and tested on Raspbian Buster)
 ```
-sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
+sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common \
+   wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
 ```
 
 ### INDI version requirement ###
@@ -33,7 +35,7 @@ PHD2 requires a version of INDI newer than 2017/07/19, or a stable version 1.5.0
 ```
   mkdir -p tmp
   cd tmp
-  sudo cmake ..
+  cmake ..
 ```
 
 By default PHD2 incorporates binary drivers from some camera manufacturers (QHY and ZWO). If you would prefer to exclude binary drivers and produce a PHD2 binary based only on open source code, use this cmake command:
@@ -41,13 +43,13 @@ By default PHD2 incorporates binary drivers from some camera manufacturers (QHY 
 ```
   mkdir -p tmp
   cd tmp
-  sudo cmake -DOPENSOURCE_ONLY=1 ..
+  cmake -DOPENSOURCE_ONLY=1 ..
 ```
 
   * Build PHD2
 
 ```
-  sudo make
+  make
 ```
 
 Once PHD2 is built, you can either run PHD2 from the local build directory
@@ -74,7 +76,7 @@ If your distribution include GCC 7 by default the solution is to compile PHD2 wi
 ```
   * Run cmake by specifying the compiler to use
 ```
-  sudo cmake -DCMAKE_C_COMPILER=gcc-6 -DCMAKE_CXX_COMPILER=g++-6 ..
+  cmake -DCMAKE_C_COMPILER=gcc-6 -DCMAKE_CXX_COMPILER=g++-6 ..
 ```
 
 ---
@@ -88,7 +90,7 @@ If you plan to build the packages locally on your computer you need to install a
 
 You also need to install the specific Debian build tools, this is done by installing the following meta package:
 ```
-apt-get install packaging-dev
+sudo apt-get install packaging-dev
 ```
 
 If you want to sign the package (required for uploading) you need to setup a gpg and a ssh key. See http://packaging.ubuntu.com/html/getting-set-up.html
