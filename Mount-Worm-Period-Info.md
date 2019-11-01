@@ -18,3 +18,4 @@ When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm P
 |Software Bisque|Paramount MyT|269.26|
 |Takahashi|EM-400|480|
 |iOptron|CEM25P|598|
+|RainBow Astro|RST 135|430.82|
