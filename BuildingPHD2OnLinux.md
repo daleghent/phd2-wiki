@@ -13,8 +13,9 @@ sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static \
 
   * Install dependencies (tested on Ubuntu 14.04 to 18.10 and tested on Raspbian Buster)
 ```
-sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev wx-common \
-   wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev libcurl4-gnutls-dev
+sudo apt-get install build-essential git cmake pkg-config libwxgtk3.0-dev \
+   wx-common wx3.0-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev \
+   libcurl4-gnutls-dev
 ```
 
 ### INDI version requirement ###
