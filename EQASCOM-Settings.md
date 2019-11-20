@@ -17,4 +17,4 @@ Once you have connected the mount and before you calibrate or guide in PHD2, upd
   - disable Dec backlash,
   - disable pulse width override.
 
-![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_3.gif)
+![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_3.png)
