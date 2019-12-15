@@ -158,6 +158,12 @@ Calibration data has been flipped.
 |:----------|:-----|:------------|
 | Mount     | string | the name of the mount |
 
+### `LockPositionShiftLimitReached` ###
+
+The lock position shift is active and the lock position has shifted to the edge of the field of view.
+
+(no event attributes)
+
 ### `LoopingExposures` ###
 
 Sent for each exposure frame while looping exposures.
@@ -331,12 +337,13 @@ Set camera exposure (error):
 |:---------|:---------|:---------|:--------------|
 |`capture_single_frame`|exposure: exposure duration milliseconds (optional), subframe: array [x,y,width,height] (optional)| integer(0) | captures a singe frame; guiding and looping must be stopped first |
 |`clear_calibration`|string: "mount" or "ao" or "both"| integer (0) | if parameter is omitted, will clear both mount and AO. Clearing calibration causes PHD2 to recalibrate next time guiding starts.|
-|`dither`  | PIXELS (float), RA\_ONLY (boolean), SETTLE (object) | integer (0) | See below     |
-|`find_star`|none      | on success: returns the lock position of the selected star, otherwise returns an error object | Auto-select a star |
+|`dither`  | `amount`:float, amount in pixels<br>`raOnly`: boolean, default=false;<br>`settle`: object | integer (0) | See below     |
+|`find_star`|`roi`: [x,y,width,height], optional, default = use full frame      | on success: returns the lock position of the selected star, otherwise returns an error object | Auto-select a star |
 |`flip_calibration`|none      | integer (0) |               |
 |`get_algo_param_names`|string: axis ("ra","x","dec", or "y") | array of guide algorithm param names (strings) |  |
 |`get_algo_param`|string: axis, string: name    | float: the value of the named parameter  | get the value of a guide algorithm parameter on an axis |
 |`get_app_state`|none      |string: current app state| same value that came in the last [AppState](EventMonitoring#AppState.md) notification |
+|`get_camera_frame_size`|none      |array: [width,height]| camera frame size in pixels. Note: frame size is only guaranteed to be available after at least one frame has been received from the camera |
 |`get_calibrated`|none      |boolean: true if calibrated|               |
 |`get_calibration_data`|string: which ("AO" or "Mount") optional, default = "Mount"| example output: `  {"calibrated":true,"xAngle":-167.1,"xRate":39.124,"xParity":"-","yAngle":106.1,"yRate":39.330,"yParity":"+"} ` |
 |`get_connected`|none      |boolean: true if all equipment is connected |               |
@@ -357,7 +364,7 @@ Set camera exposure (error):
 |`get_sensor_temperature`|none      |"temperature": sensor temperature in degrees C (number) |  |
 |`get_star_image`|integer: size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
 |`get_use_subframes`|none |boolean:subframes_in_use|  |
-|`guide`   | SETTLE (object), RECALIBRATE (boolean)| integer (0) | See below     |
+|`guide`   | `settle`: object;<br>`recalibrate`: boolean, optional, default = false;<br>`roi`: array [x,y,width,height], optional, default = full frame | integer (0) | See below     |
 |`guide_pulse`| integer: amount (pulse duration in milliseconds, or ao step count), string: direction ("N"/"S"/"E"/"W"/"Up"/"Down"/"Left"/"Right"), string (optional): which ("AO" or "Mount" [default]) | integer (0) | Returns an error if PHD2 is currently calibrating or guiding
 |`loop`    |none      |integer (0)|start capturing, or, if guiding, stop guiding but continue capturing|
 |`save_image`|none      |` {"filename":"full_path_to_FITS_image_file"} `| save the current image. The client should remove the file when done with it. |
@@ -393,8 +400,8 @@ The `guide` method allows a client to request PHD2 to do whatever it needs to st
 When the `guide` method command is received, PHD2 will respond immediately indicating that the `guide` sequence has started. The `guide` method will return an error status if equipment is not connected. PHD will then:
 
   * start capturing if necessary
-  * auto-select a guide star if one is not already selected
-  * calibrate if necessary, or if the RECALIBRATE parameter is true
+  * auto-select a guide star if one is not already selected. It the optional ROI parameter is present, star selection will be confined to the specified region of interest.
+  * calibrate if necessary, or if the `recalibrate` parameter is true
   * wait for calibration to complete
   * start guiding if necessary
   * wait for settle (or timeout)
@@ -405,7 +412,12 @@ If the `guide` command is accepted, PHD is guaranteed to send a `SettleDone` eve
 
 Example
 ```
-{"method": "guide", "params": [{"pixels": 1.5, "time": 8, "timeout": 40}, false], "id": 42}
+{"method": "guide", "params": {"settle": {"pixels": 1.5, "time": 8, "timeout": 40}}, "id": 42}
+```
+
+Example showing optional `recalibrate` and `roi` params
+```
+{"method": "guide", "params": {"settle": {"pixels": 1.5, "time": 8, "timeout": 40}, "recalibrate": false, "roi": [20, -50, 1280, 960]}, "id": 42}
 ```
 
 ### Dither Method ###
@@ -416,5 +428,5 @@ Like the `guide` method, the `dither` method takes a `SETTLE` object parameter. 
 
 Example
 ```
-{"method": "dither", "params": [10, false, {"pixels": 1.5, "time": 8, "timeout": 40}], "id": 42}
+{"method": "dither", "params": {"amount": 10, "raOnly": false, "settle": {"pixels": 1.5, "time": 8, "timeout": 40}}, "id": 42}
 ```
