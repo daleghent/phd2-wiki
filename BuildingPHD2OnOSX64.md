@@ -14,14 +14,18 @@ The build will be using a few tools from [MacPorts](https://www.macports.org/). 
 
 We really just need the command-line tools, we won't be using XCode itself.
 
-#### Download and build wxWidgets-3.0.4
+#### Download and build wxWidgets-3.1.3
 
 > https://wxwidgets.org/downloads/
 
-cd to the wxWidgets-3.0.4 source directory and run the following commands to build wxWidgets static libs and install them to a location $WXWIN
+Run the following commands to build wxWidgets static libs and install them to a location $WXWIN
 
 ```
-./configure --disable-shared --with-libpng=builtin --with-cocoa --prefix=$WXWIN \
+mkdir wxWidgets-3.1.3-build
+cd wxWidgets-3.1.3-build
+/path/to/wxWidgets-3.1.3/configure --disable-shared --with-libpng=builtin --with-cocoa --prefix=$WXWIN \
+ --with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk \
+ --with-macosx-version-min=10.14
 make
 make install
 ```
