@@ -60,7 +60,7 @@ On Windows ToupTek camera support is built-in to PHD2, or you can use the ToupTe
 <a name=iOptron></a>
 ### iOptron iGuider ###
 The camera's gain and exposure time can be set by clicking the camera properties button on the toolbar.
-See the this [forum post](https://groups.google.com/d/msg/open-phd-guiding/WWY_tdKCpw8/dbZPCzyAHm0J) for a description of how the camera's exposure time relates to PHD2's exposure duration setting.
+See this [forum post](https://groups.google.com/d/msg/open-phd-guiding/WWY_tdKCpw8/dbZPCzyAHm0J) for a description of how the camera's exposure time relates to PHD2's exposure duration setting.
 
 Here is the information from iOptron showing the camera's available gain and exposure values:
 
