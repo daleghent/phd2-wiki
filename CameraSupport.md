@@ -15,6 +15,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | Fishcamp Starfish | **Yes** | **Yes** | No | No |  |
 | i-Nova PLC-M | **Yes** | No | No | No | |
 | INDI Cameras| **Yes** | **Yes** | **Yes** | **Yes** | [INDI camera list](http://www.indilib.org/devices/ccds.html) |
+| iOptron iGuider | **Yes** | No | No | No |  [iOptron iGuider info](#ioptron) |
 | KWIQGuider | No | **Yes** | **Yes** | No |  [*] Mac 64 unconfirmed |
 | Long exposure webcams | **Yes** | No | No | No | USB, Parallel, or serial interface |
 | MagZero MZ-5 | **Yes** | No | No | No |  |
@@ -55,3 +56,12 @@ On Linux, the USB 2.0 cameras may require that you flash the firmware version la
 ### ToupTek Cameras ###
 
 On Windows ToupTek camera support is built-in to PHD2, or you can use the ToupTek's ASCOM camera driver.  Linux native support should also work, but it has not been tested yet.  On Mac, you'll need the 64-bit version of PHD2 as  ToupTek no longer provides SDK support for 32-bit Macs.
+
+<a name=iOptron></a>
+### iOptron iGuider ###
+The camera's gain and exposure time can be set by clicking the camera properties button on the toolbar.
+See the this [forum post](https://groups.google.com/d/msg/open-phd-guiding/WWY_tdKCpw8/dbZPCzyAHm0J) for a description of how the camera's exposure time relates to PHD2's exposure duration setting.
+
+Here is the information from iOptron showing the camera's available gain and exposure values:
+
+![](https://user-images.githubusercontent.com/6864470/72243056-df9bb680-35b8-11ea-9b28-70d2e2108cd2.png)
