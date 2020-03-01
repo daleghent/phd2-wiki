@@ -291,6 +291,12 @@ A guiding parameter has been changed.
 |Name       |string|the name of the parameter that changed|
 |Value      |any|the new value of the parameter|
 
+### `ConfigurationChange` ###
+
+Notification sent when any settings are changed -- allows a client to keep in sync with PHD2 configuration settings by exporting settings only when required.
+
+(no event attributes)
+
 ## Initial Event Messages ##
 
 When a client first connects, PHD sends a series of event messages to the client. The first event is
