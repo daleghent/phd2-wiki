@@ -1,13 +1,17 @@
 # Introduction #
 
-OpenPHD allows programs to connect to PHD to actively monitor guiding status and control PHD. This allows clients to do things like:
-  * graph phd data in real time
-  * monitor phd for exceptional events like guiding lost, and send an alert when something goes wrong
-  * control PHD from an imaging application
+PHD2 allows programs to actively monitor guiding status and control PHD2. This allows clients to do things like:
+  * graph PHD2 guide data in real time
+  * monitor PHD2 for exceptional events like guiding lost, and send an alert when something goes wrong
+  * control PHD2 from an imaging application
+
+This document describes the communication protocol for interacting programmatically with PHD2.
+
+If you are looking for ready-to-use code that implements this communication protocol, please see this repo [PHD2 API Client Code](https://github.com/agalasso/phd2client).
 
 # Connection #
 
-Clients connect to PHD on TCP port 4400. When multiple PHD instances are running, each instance listens on successive port numbers (4401, 4402, ...).
+Clients connect to PHD2 on TCP port 4400. When multiple PHD instances are running, each instance listens on successive port numbers (4401, 4402, ...).
 
 PHD allows multiple clients to establish connections simultaneously.
 
