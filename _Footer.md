@@ -10,3 +10,6 @@ Approach #2:
 Approach #3:
 
 (from another user) Use poth [plain old telescope hub] and then have poth connect to tsx.  Then direct drive worked.
+
+
+PERMISSIONS NOTE: Some users have reported having intermittent problems, or not seeing the EQMOD ascom options within PHD2. They have reported running all ascom software (including platform, drivers, and software) as Admin corrected these problems. WARNING: PHD and many other software programs recommend against running programs in admin mode as they give elevated priveleges that may not be required. However you approach this, all ascom and related software (and i mean *all* of it) needs to be run with identical user permissions.
