@@ -15,9 +15,7 @@ This page describes how to set up a build environment from scratch on MS-Windows
 
 1. Install [CMake](http://www.cmake.org/), the cross-platform build system:
 
-> http://www.cmake.org/download/
-
-We highly recommend installing cmake version 3.5.2 as that is the version used by most developers and the version used on the build server. [cmake-3.5.2-win32-x86.msi](https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.msi)
+> https://www.cmake.org/download/
 
 2. If you do not yet have a version of Visual Studio 2013 for Windows Desktop then download it from
 
