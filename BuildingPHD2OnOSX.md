@@ -4,7 +4,7 @@ Instructions for building a 32-bit version of PHD2 that will run on macOS 10.14 
 
 #### Install CMake version 3.5.2
 
-> http://www.cmake.org/download/
+> https://www.cmake.org/download/
 
 NOTE: newer versions of CMake like 3.8.0 do not currently work for building PHD2. CMake version 3.5.2 is known to work, so please install that version for building PHD2.
 
@@ -16,11 +16,11 @@ NOTE: newer versions of CMake like 3.8.0 do not currently work for building PHD2
 
 > Download Xcode 4.6.3 from developer.apple.com, extract the MacOSX10.7.sdk folder and put it under /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
 
-#### Download and build wxWidgets-3.0.4
+#### Download and build wxWidgets-3.0.5
 
-> http://wxwidgets.org/downloads/
+> https://wxwidgets.org/downloads/
 
-cd to the wxWidgets-3.0.4 source directory and run the following commands to build wxWidgets 32-bit static libs and install them to a location $WXWIN
+cd to the wxWidgets-3.0.5 source directory and run the following commands to build wxWidgets 32-bit static libs and install them to a location $WXWIN
 
 ```
 ./configure --enable-universal_binary=i386,x86_64 --disable-shared --with-libpng=builtin --with-cocoa --prefix=$WXWIN \
