@@ -31,17 +31,17 @@ Both are free but will require you to register with Microsoft.
 
 > https://github.com/KindDragon/vld/releases
 
-4. Download wxWidgets 3.0.4 from
+4. Download wxWidgets 3.0.5 from
 
 > https://www.wxwidgets.org/downloads/
 
 PHD2 requires wxWidgets static libraries, not DLLs, so you need to build them as follows.
 
-Install wxWidgets into &lt;wx install path&gt;, typically C:\wxWidgets-3.0.4.
+Install wxWidgets into &lt;wx install path&gt;, typically C:\wxWidgets-3.0.5.
 
 Set a WXWIN environment variable to point to &lt;wx install path&gt;. For example:
 
-> WXWIN = C:\wxWidgets-3.0.4
+> WXWIN = C:\wxWidgets-3.0.5
 
 Open a Visual Studio command prompt (menu Tools => Visual Studio Command Prompt) and run two command line builds, one for release, one for debug:
 
@@ -52,11 +52,11 @@ msbuild wx_vc12.sln /p:configuration=Release /p:platform=win32 /m:8
 ```
 
 
-> _Extra Info_ wxWidgets sources are downloaded as a zip file. You should stick with the 3.0.4 release used in the current PHD2 build. On the wxWidgets site, go to the downloads page and find the correct release.  If you don't see it there, go to the home page for wxWidgets and look in the 'News' paragraphs.  Once it’s downloaded, extract into a location you want.
+> _Extra Info_ wxWidgets sources are downloaded as a zip file. You should stick with the 3.0.5 release used in the current PHD2 build. On the wxWidgets site, go to the downloads page and find the correct release.  If you don't see it there, go to the home page for wxWidgets and look in the 'News' paragraphs.  Once it’s downloaded, extract into a location you want.
 
-> Then set the WXWIN environment variable as follows:  suppose you’ve installed wxWidgets in a folder c:\dev\CPP\_Libs\wxWidgets-3.0.4\.  Then the environment variable should look like this:
+> Then set the WXWIN environment variable as follows:  suppose you’ve installed wxWidgets in a folder c:\dev\CPP\_Libs\wxWidgets-3.0.5\.  Then the environment variable should look like this:
 
-> WXWIN = C:\dev\CPP\_Libs\wxWidgets-3.0.4
+> WXWIN = C:\dev\CPP\_Libs\wxWidgets-3.0.5
 
 
 5. Download OpenCV 2.4.10 from
