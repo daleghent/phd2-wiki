@@ -32,6 +32,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | SBIG cameras | **Yes** | **Yes** | **Yes** | No | [SBIG info](#sbig) |
 | Simulator | **Yes** | **Yes** | **Yes** | **Yes** | PHD2's built-in camera simulator, great for development and learning PHD2 |
 | Starlight Xpress cameras | **Yes** | **Yes** | **Yes** | **Yes** |[SX info](#sx)|
+| Svbony cameras | **Yes** | No | No | No | |
 | The Imaging Source cameras | **Yes** | **Yes** | **Yes** | **Yes** | On Windows select "Windows WDM-style webcam" or use the [TIS ASCOM camera driver](http://www.deepsky-online.com/). For OSX and Linux, use the [TIS INDI Driver](http://www.indilib.org/devices/ccds/imaging-source-ccd.html). OSX also has a builtin driver (DCAM Firewire). |
 | ToupTek Cameras | **Yes** | No | **Yes** | **Yes** | [Touptek info](#touptek)|
 | Windows WDM-style webcams | **Yes** | No | No | No | |
