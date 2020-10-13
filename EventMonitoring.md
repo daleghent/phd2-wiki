@@ -257,6 +257,7 @@ This event corresponds to a line in the PHD Guide Log. The event is sent for eac
 |DECDirection|string|"South" or "North"   |
 |StarMass   |number|the Star Mass value of the guide star|
 |SNR        |number|the computed Signal-to-noise ratio of the guide star|
+|HFD        |number|the guide star half-flux diameter (HFD) in pixels|
 |AvgDist    |number|a smoothed average of the guide distance in pixels (equivalent to value returned by socket server MSG\_REQDIST)|
 |RALimited  |boolean|true if step was limited by the Max RA setting (attribute omitted if step was not limited)|
 |DecLimited |boolean|true if step was limited by the Max Dec setting (attribute omitted if step was not limited)|
