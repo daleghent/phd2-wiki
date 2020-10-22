@@ -372,7 +372,7 @@ Set camera exposure (error):
 |`get_profile`|none      |` {"id":profile_id,"name":"profile_name"} ` |
 |`get_profiles`|none      |array of ` {"id":profile_id,"name":"profile_name"} ` |  |
 |`get_search_region`|none      |integer: search region radius |  |
-|`get_sensor_temperature`|none      |"temperature": sensor temperature in degrees C (number) |  |
+|`get_ccd_temperature`|none      |"temperature": sensor temperature in degrees C (number) |  |
 |`get_star_image`|integer: size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
 |`get_use_subframes`|none |boolean:subframes_in_use|  |
 |`guide`   | `settle`: object;<br>`recalibrate`: boolean, optional, default = false;<br>`roi`: array [x,y,width,height], optional, default = full frame | integer (0) | See below     |
