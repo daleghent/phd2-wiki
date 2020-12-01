@@ -21,7 +21,7 @@ Please help us keep this page up to date!  You can edit this page if you have a 
 | MagZero MZ-5 | **Yes** | No | No | No |  |
 | MallinCam SkyRaider | **Yes** | **Yes** | **Yes** | **Yes** | Windows: select ToupTek Camera, or connect as a WDM webcam or as an ASCOM camera (download the ASCOM driver from [Mallincam software downloads](http://www.mallincam.net/software-downloads.html))<br>Mac 32-bit: supported natively<br>Mac 64-bit and Linux: Connect as ToupTek camera |
 | Meade DSI I, II, or III | **Yes** | **Yes** | No | No |  |
-| Moravian Cameras | **Yes** | No | No | No | [Moravian info](#moravian) |
+| Moravian Cameras | **Yes** | **Yes** | **Yes** | **Yes** | Windows: native, ASCOM, or INDI<br>Mac and Linux: use the Moravian INDI driver<br>[Moravian info](#moravian) |
 | Omegon Pro Cameras | **Yes** | No | **Yes** | **Yes** | [Touptek info](#touptek)|
 | OpenCV webcam | **Yes** | No | No | No |  |
 | Orion StarShoot Autoguider | **Yes** | **Yes** | **Yes** | **Yes** (see [here](https://github.com/OpenPHDGuiding/phd2/issues/496)) | Note: [How to connect to an SSAG with corrupted firmware](Orion-Starshoot-Autoguider-VID---PID-Override) |
@@ -70,6 +70,6 @@ Here is the information from iOptron showing the camera's available gain and exp
 
 <a name=moravian></a>
 ### Moravian Cameras ###
-- The Moravian SDK is Windows-only, so native Moravian camera support is only available on Windows.
+- The Moravian SDK is Windows-only, so native Moravian camera support is only available on Windows. Use the Moravian INDI driver for Mac and Linux.
 - Currently PHD2's native support covers the gXusb-type cameras -- everything but the large cooled C3 and C4 cameras.
 - Cameras connected through the Moravian Camera Ethernet adapter are not supported, though we could add support for that if there is a demand.
