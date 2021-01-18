@@ -5,6 +5,7 @@ When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm P
 |Make |Model|Worm Period, seconds|
 |-----|-----|--------------------|
 |Astro-Physics|1100GTO|382.95|
+|Astro-Physics|1600GTO|382.95|
 |Celestron|AVX|594|
 |Celestron|CGEM|478.689|
 |Celestron|CPC|478.6893918|
