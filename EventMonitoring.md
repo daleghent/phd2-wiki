@@ -440,6 +440,7 @@ Like the `guide` method, the `dither` method takes a `SETTLE` object parameter. 
 Example
 ```
 {"method": "dither", "params": {"amount": 10, "raOnly": false, "settle": {"pixels": 1.5, "time": 8, "timeout": 40}}, "id": 42}
+```
 
 # Application Notes #
 
