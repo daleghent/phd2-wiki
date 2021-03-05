@@ -419,7 +419,7 @@ When the `guide` method command is received, PHD2 will respond immediately indic
   * report progress of settling for each exposure (send `Settling` events)
   * report success or failure by sending a `SettleDone` event.
 
-If the `guide` command is accepted, PHD is guaranteed to send a `SettleDone` event some time later indicating the success or failure of the guide sequence.
+If the `guide` command is accepted, PHD is guaranteed to send a `SettleDone` event some time later indicating the success or failure of the guide sequence.  Note: if PHD2 is already guiding, the 'Guide' RPC will only trigger another settling period - it will not stop and restart guiding.  To "start fresh" with guiding, first transmit the 'stop_capture' RPC, then transmit the 'guide' RPC.
 
 Example
 ```
@@ -440,4 +440,38 @@ Like the `guide` method, the `dither` method takes a `SETTLE` object parameter. 
 Example
 ```
 {"method": "dither", "params": {"amount": 10, "raOnly": false, "settle": {"pixels": 1.5, "time": 8, "timeout": 40}}, "id": 42}
+
+# Application Notes #
+
+1. Any of the PHD2 RPC commands that include a settling parameter can trigger long-running 
+
+operations.  For example, a 'guide' command may result in an extended sequence of looping, 
+
+auto-selection, calibration, start of guiding, and settling.  If the application sends another RPC that 
+
+can affect these state transitions before the first operation is completed, it may get an error return 
+
+message about "re-entrancy".  For example, issuing a command like 'dither' while a previous 
+
+settling event is still ongoing will result in an error return, and the dither will not be done.  It is the 
+
+responsibility of the application to monitor the PHD2 events and state-changes after starting one 
+
+of these long-running operations.  The best practice is to wait until the 'SettleDone' message has 
+
+been received, at which point the long-running operation has completed.  
+
+2. Although the available RPC commands permit a fine-grained control over PHD2 operations, it is 
+
+generally a poor practice to "micro-manage" the application.  For example, forcing calibrations or 
+
+flipping calibration data is normally unnecessary and adds confusion for the end-user.  These 
+
+things should be done only in special circumstances, not as a lazy "lowest-common-denominator" 
+
+approach.  Unnecessary calibrations, in particular, can be burdensome to end-users because 
+
+lower-end mounts often need to have Dec backlash cleared manually in order for the calibration 
+
+to get an accurate result.
 ```
