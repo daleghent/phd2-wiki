@@ -419,7 +419,7 @@ When the `guide` method command is received, PHD2 will respond immediately indic
   * report progress of settling for each exposure (send `Settling` events)
   * report success or failure by sending a `SettleDone` event.
 
-If the `guide` command is accepted, PHD is guaranteed to send a `SettleDone` event some time later indicating the success or failure of the guide sequence.  Note: if PHD2 is already guiding, the 'Guide' RPC will only trigger another settling period - it will not stop and restart guiding.  To "start fresh" with guiding, first transmit the 'stop_capture' RPC, then transmit the 'guide' RPC.
+If the `guide` command is accepted, PHD is guaranteed to send a `SettleDone` event some time later indicating the success or failure of the guide sequence.  Note: if PHD2 is already guiding, the 'guide' RPC will only trigger another settling period - it will not stop and restart guiding.  To "start fresh" with guiding, first transmit the 'stop_capture' RPC, then transmit the 'guide' RPC.
 
 Example
 ```
