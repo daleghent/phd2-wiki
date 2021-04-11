@@ -26,3 +26,4 @@ When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm P
 |iOptron|CEM40, GEM45|400|
 |iOptron|CEM70|348|
 |iOptron|CEM120|240|
+|Iexos|100|600|
