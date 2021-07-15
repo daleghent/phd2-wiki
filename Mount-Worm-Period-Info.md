@@ -9,7 +9,6 @@ When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm P
 |Celestron|AVX|594|
 |Celestron|CGEM|478.689|
 |Celestron|CPC|478.6893918|
-|iOptron|IEQ45PRO|336.6|
 |Losmandy|G11|239.34|
 |Losmandy|G11T|318.1262611|
 |Losmandy|GM8|479|
@@ -18,14 +17,16 @@ When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm P
 |Orion|Sirius EQ-G|638|
 |Orion|Atlas Pro|479|
 |Sky-watcher|EQ6|479|
+|Sky-Watcher|EQ6-R Pro (2017)|479|
 |Software Bisque|Paramount ME/MEII|149.6|
 |Software Bisque|Paramount MX/MX+|230|
 |Software Bisque|Paramount MyT|269.26|
 |Takahashi|EM-400|480|
-|iOptron|CEM25P|598|
 |RainBow Astro|RST 135|430.82|
+|iOptron|CEM25P|598|
 |iOptron|CEM26, GEM28|600|
 |iOptron|CEM40, GEM45|400|
 |iOptron|CEM70|348|
 |iOptron|CEM120|240|
+|iOptron|IEQ45PRO|336.6|
 |Iexos|100|600|
