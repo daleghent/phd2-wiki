@@ -4,11 +4,11 @@ PHD2 works well with EQASCOM, but you'll need to ensure you have the proper EQAS
 
 Open the ASCOM Driver settings by clicking here
 
-![Mount Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_1.gif)
+![Mount Settings](http://openphdguiding.org/wiki-img/eqascom_1.gif)
 
 Enable ASCOM Pulse Guiding and verify that SideOfPier is Pointing (ASCOM)
 
-![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2018/05/eqascom_2.gif)
+![EQASCOM Settings](http://openphdguiding.org/wiki-img/eqascom_2.gif)
 
 Once you have connected the mount and before you calibrate or guide in PHD2, update your EQASCOM settings
 
@@ -17,4 +17,4 @@ Once you have connected the mount and before you calibrate or guide in PHD2, upd
   - disable Dec backlash,
   - disable pulse width override.
 
-![EQASCOM Settings](http://openphdguiding.org/wp-content/uploads/2017/05/eqascom_3.png)
+![EQASCOM Settings](http://openphdguiding.org/wiki-img/eqascom_3.png)
