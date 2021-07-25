@@ -47,9 +47,11 @@ Set a WXWIN environment variable to point to &lt;wx install path&gt;. For exampl
 Open a Visual Studio command prompt (menu Tools => Visual Studio Command Prompt) and run two command line builds, one for release, one for debug:
 
 If the VS Command prompt doesn't appear in your tools menu, you can create it: 
-> Tools->External Tools->Add 
+> Tools, External Tools, Add 
+
 > title: c:\windows\system32\cmd.exe      
-> arguments:  /k ""C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat"" x86
+
+> arguments: /k ""C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat"" x86
 
 ```
 cd %WXWIN%\build\msw
