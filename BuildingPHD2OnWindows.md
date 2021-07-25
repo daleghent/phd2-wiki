@@ -49,7 +49,9 @@ Open a Visual Studio command prompt (menu Tools => Visual Studio Command Prompt)
 If the VS Command prompt doesn't appear in your tools menu, you can create it: 
 > Tools, External Tools, Add 
 
-> title: c:\windows\system32\cmd.exe      
+> title: Visual Studio Cmd Prompt x86
+
+> command: c:\windows\system32\cmd.exe      
 
 > arguments: /k ""C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat"" x86
 
