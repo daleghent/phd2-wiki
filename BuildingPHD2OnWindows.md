@@ -22,7 +22,7 @@ This page describes how to set up a build environment from scratch on MS-Windows
 > https://visualstudio.microsoft.com/vs/older-downloads/
 
 The download you want is **Visual Studio Express 2013 for Windows Desktop** or **Visual Studio Community 2013**.
-(note: at the moment, it appears Express is missing some include files necessary to build wxwidgets, so stich with Community)
+(note: at the moment, it appears Express is missing some include files necessary to build wxwidgets, so stick with Community)
 
 Visual Studio 2013 requires Windows 7 SP1 or later; it will not install on Windows XP.
 
