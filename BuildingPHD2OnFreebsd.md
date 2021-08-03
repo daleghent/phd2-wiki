@@ -7,9 +7,7 @@ Building PHD2 on FreeBSD requires its dependencies to be installed in the system
 * eigen
 * googletest
 * wx31-gtk3
-
-### Requires manual building
-* libindi (master should build on FreeBSD, https://github.com/indilib/indi)
+* indi
 
 ### Available in the base system (no install required)
 * libusb
