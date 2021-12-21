@@ -15,11 +15,11 @@ This page describes how to set up a build environment from scratch on MS-Windows
 
 1. Install [CMake](http://www.cmake.org/), the cross-platform build system:
 
-> https://www.cmake.org/download/
+> [https://www.cmake.org/download/](https://linkify.me/GgkgHO7)
 
 2. If you do not yet have a version of Visual Studio 2013 for Windows Desktop then download it from
 
-> https://visualstudio.microsoft.com/vs/older-downloads/
+> [https://visualstudio.microsoft.com/vs/older-downloads/](https://linkify.me/GgkgHO7)
 
 The download you want is **Visual Studio Express 2013 for Windows Desktop** or **Visual Studio Community 2013**.
 (note: at the moment, it appears Express is missing some include files necessary to build wxwidgets, so stick with Community)
@@ -30,11 +30,11 @@ Both are free but will require you to register with Microsoft.
 
 3. (Optional) Download and install Visual Leak Detector (VLD) from
 
-> https://github.com/KindDragon/vld/releases
+> [https://github.com/KindDragon/vld/releases](https://linkify.me/GgkgHO7)
 
 4. Download wxWidgets 3.0.5 from
 
-> https://www.wxwidgets.org/downloads/
+> [https://www.wxwidgets.org/downloads/](https://linkify.me/GgkgHO7)
 
 PHD2 requires wxWidgets static libraries, not DLLs, so you need to build them as follows.
 
@@ -71,7 +71,7 @@ msbuild wx_vc12.sln /p:configuration=Release /p:platform=win32 /m:8
 
 5. Download OpenCV 2.4.10 from
 
-> http://sourceforge.net/projects/opencvlibrary/files/opencv-win/
+> [http://sourceforge.net/projects/opencvlibrary/files/opencv-win/](https://linkify.me/GgkgHO7)
 
 Run the self extracting executable, and put the opencv folder in any location you like.
 
