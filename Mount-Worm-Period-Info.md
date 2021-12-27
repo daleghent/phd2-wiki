@@ -2,13 +2,14 @@ Please add your mount's worm period to the table below.  If you have a github ac
 
 When using the Predictive PEC Guide Algorithm in PHD2, enter your mount's Worm Period for the Period Length setting. The Predictive PEC algorithm will eventually deduce the worm period automatically, but if you enter the correct worm period for your mount, the PPEC algorithm will adapt more quickly.
 
-|Make |Model|Worm Period, seconds|
+|Make |Model|Worm Period [sec]|
 |-----|-----|--------------------|
 |Astro-Physics|1100GTO|382.95|
 |Astro-Physics|1600GTO|382.95|
 |Celestron|AVX|594|
 |Celestron|CGEM|478.689|
 |Celestron|CPC|478.6893918|
+|Fornax|F52/F102/F152|450|
 |Losmandy|G11|239.34|
 |Losmandy|G11T|318.1262611|
 |Losmandy|GM8|479|
