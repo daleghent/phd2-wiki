@@ -85,7 +85,7 @@ If your distribution include GCC 7 by default the solution is to compile PHD2 wi
 
 # Build Debian packages #
 
-The following notes are only to build a debian package that can be installed on other computer. Only follow the  steps above if you only need PHD2 on a single computer.
+The following notes are only to build a debian package that can be installed on other computer. This is not necessary if you only need PHD2 on a single computer.
 
 ## Prepare the system with the required packages ##
 
