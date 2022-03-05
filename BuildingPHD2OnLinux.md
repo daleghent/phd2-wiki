@@ -98,41 +98,41 @@ If you want to sign the package (required for uploading) you need to setup a gpg
 
 ## Prepare the source tar ##
 
-We need to start with a copy of the source code located in a directory named with the full version name, here 2.5.0 is used as an example, you must replace it by the current version in all the following commands. This directory must not include any git information. For that we use Github subversion compatibility command: "svn export":
+We need to start with a copy of the source code located in a directory named with the full version name, here 2.6.11 is used as an example, you must replace it by the current version in all the following commands. This directory must not include any git information. For that we use Github subversion compatibility command: "svn export":
 ```
-svn export https://github.com/OpenPHDGuiding/phd2/trunk phd2_2.5.0
+svn export https://github.com/OpenPHDGuiding/phd2/trunk phd2_2.6.11
 ```
 Then we remove some files not used by Linux:
 ```
-cd phd2_2.5.0
+cd phd2_2.6.11
 rm -rf extra_frameworks WinLibs *.a
 ```
-Ensure the translations are up to date and compiled:
-```
-cd build
-./locales_update.sh
-./locales_compile.sh
-```
-Ensure the help file is updated for all the languages:
-```
-cd build
-./build_help.sh
-```
-Update the files in the phd2\_2.5.0/debian directory. Be careful that every character in this files is important for the build process. Refer to the Debian documentation if your are not familiar with this files.
+Update the files in the phd2\_2.6.11/debian directory. Be careful that every character in this files is important for the build process. Refer to the Debian documentation if your are not familiar with this files.
   * The file "changelog" must be updated to include the new version you package and the target system you want to build.
   * The file "control"  must be checked to add every new build dependency.
   * The file "copyright" must be updated to match the content of the PHD2 About dialog.
 
+An important change is the use of GTK3 with wxWidgets since Debian Bullseye. This command make the necessary change in the control file:
+```
+sed -i "s/libwxgtk3.0-dev, libgtk2.0-dev,/libwxgtk3.0-gtk3-dev, libgtk-3-dev,/" debian/control
+```
+
+Create the README file:
+```
+sed "s/@VERSION@/2.6.11/g" README-PHD2.txt.in > README-PHD2.txt
+```
+
 Create the versioned source tar:
 ```
-tar cvzf phd2_2.5.0.orig.tar.gz phd2_2.5.0
+cd ..
+tar cvzf phd2_2.6.11.orig.tar.gz phd2_2.6.11
 ```
 
 ## Build the package locally ##
 
 Even if you plan to upload the source package it is a good idea to test if it builds correctly on your system.
 ```
-cd phd2_2.5.0
+cd phd2_2.6.11
 debuild -us -uc
 ```
 You can now test the resulting .deb on your system.
@@ -143,14 +143,11 @@ We need to build a source package that is later uploaded to the PPA and compiled
 
 Only the first package build for a new version must include the source tar `*`.orig.tar.gz. Use the following command to build it:
 ```
-cd phd2_2.5.0
+cd phd2_2.6.11
 debuild -S -sa
 ```
 
-Change the Ubuntu version in debian/changelog:
-```
-sed -i '/2.5.0/s/trusty/utopic/g' debian/changelog
-```
+To build for another version of Ubuntu, change the Ubuntu version in debian/changelog.
 Make the source package without `*`.orig.tar.gz :
 ```
 debuild -S -sd
@@ -158,8 +155,8 @@ debuild -S -sd
 
 Upload the source packages to the PPA, first the one with the source tar:
 ```
-dput ppa:username/ppaname phd2_2.5.0-0ppa1~trusty1_source.changes
-dput ppa:username/ppaname phd2_2.5.0-0ppa1~utopic1_source.changes
+dput ppa:username/ppaname phd2_2.6.11-0ppa1~ubuntu20.04_source.changes
+dput ppa:username/ppaname phd2_2.6.11-0ppa1~ubuntu22.04_source.changes
 ```
 
 Connect to the PPA and check the build result for every version and architecture.
