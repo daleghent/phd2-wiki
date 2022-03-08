@@ -114,16 +114,6 @@ Update the files in the phd2\_2.6.11/debian directory. Be careful that every cha
   * The file "control"  must be checked to add every new build dependency.
   * The file "copyright" must be updated to match the content of the PHD2 About dialog.
 
-An important change is the use of GTK3 with wxWidgets since Debian Bullseye. This command make the necessary change in the control file:
-```
-sed -i "s/libwxgtk3.0-dev, libgtk2.0-dev,/libwxgtk3.0-gtk3-dev, libgtk-3-dev,/" debian/control
-```
-
-Create the README file:
-```
-sed "s/@VERSION@/2.6.11/g" README-PHD2.txt.in > README-PHD2.txt
-```
-
 Create the versioned source tar:
 ```
 cd ..
