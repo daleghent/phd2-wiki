@@ -248,9 +248,9 @@ This event corresponds to a line in the PHD Guide Log. The event is sent for eac
 |dx         |number|the X-offset in pixels|
 |dy         |number|the Y-offset in pixels|
 |RADistanceRaw|number|the RA distance in pixels of the guide offset vector|
-|DecDistanceRaw|number|the Dec distance in pixels of the guide offset vector|
+|DECDistanceRaw|number|the Dec distance in pixels of the guide offset vector|
 |RADistanceGuide|number|the guide algorithm-modified RA distance in pixels of the guide offset vector|
-|DecDistanceGuide|number|the guide algorithm-modified Dec distance in pixels of the guide offset vector|
+|DECDistanceGuide|number|the guide algorithm-modified Dec distance in pixels of the guide offset vector|
 |RADuration |number|the RA guide pulse duration in milliseconds|
 |RADirection|string|"East" or "West"   |
 |DECDuration|number|the Dec guide pulse duration in milliseconds|
