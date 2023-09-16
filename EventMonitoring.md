@@ -261,7 +261,7 @@ This event corresponds to a line in the PHD Guide Log. The event is sent for eac
 |AvgDist    |number|a smoothed average of the guide distance in pixels (equivalent to value returned by socket server MSG\_REQDIST)|
 |RALimited  |boolean|true if step was limited by the Max RA setting (attribute omitted if step was not limited)|
 |DecLimited |boolean|true if step was limited by the Max Dec setting (attribute omitted if step was not limited)|
-|ErrorCode  |number|the star finder error code|
+|ErrorCode  |number|the star finder error code, 1=saturated, 2=low SNR, 3=low mass, 4=edge of frame, 5=mass change, 6=unexpected|
 
 ### `GuidingDithered` ###
 
