@@ -4,7 +4,7 @@ This page describes how to set up a build environment from scratch on MS-Windows
 
   1. Install CMake
   1. Get the Visual Studio C++ compiler
-  1. Install Visual Leak Detector (optional)
+  1. (optional) Install Visual Leak Detector
   1. Install wxWidgets
   1. Get the PHD2 source code
   1. Generate the Visual Studio project files
@@ -36,14 +36,13 @@ PHD2 requires wxWidgets static libraries, not DLLs, so you need to build them as
 
 Install wxWidgets into &lt;wx install path&gt;, typically C:\wxWidgets-3.0.5.
 
+Convert the wxWidgets solution files to VS 2022 by opening C:\wxWidgets-3.0.5\build\msw\wx_vc12.sln with VS 2022 and let Visual Studio convert the solution; close the solution.
+
 Set a WXWIN environment variable to point to &lt;wx install path&gt;. For example:
 
 > WXWIN = C:\wxWidgets-3.0.5
 
-Open a Visual Studio command prompt (menu Tools => Command Line => Developer Command Prompt) and run two command line builds, one for release, one for debug:
-
-convert the solution files:
- open C:\wxWidgets-3.0.5\build\msw\wx_vc12.sln with VS 2022 and let Visual Studio convert the solution; close the solution
+Open a Visual Studio command prompt from within VS 2022 (menu Tools => Command Line => Developer Command Prompt) and run two command line builds, one for release, one for debug:
 
 ```
 cd %WXWIN%\build\msw
