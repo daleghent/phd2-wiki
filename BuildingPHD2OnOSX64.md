@@ -4,11 +4,11 @@ Instructions for building a 64-bit version of PHD2 that will run on macOS 10.14 
 
 #### Install MacPorts
 
-The build will be using a few tools from [MacPorts](https://www.macports.org/). [HomeBrew](https://brew.sh/) should work just as well but I have not tried it.
+The build will be using a few tools from [HomeBrew](https://brew.sh/). Macports should work just as well it you prefer that.
 
 #### Install CMake
 
-```port install cmake```
+```brew install cmake```
 
 #### Install Xcode and the Xcode Command Line Tools
 
@@ -23,11 +23,13 @@ Run the following commands to build wxWidgets static libs and install them to a 
 ```
 mkdir wxWidgets-3.1.7-build
 cd wxWidgets-3.1.7-build
-/path/to/wxWidgets-3.1.7/configure --disable-shared --with-libpng=builtin --with-cocoa --prefix=$WXWIN \
- --with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk \
- --with-macosx-version-min=10.14 \
+/path/to/wxWidgets-3.1.7/configure --disable-shared --with-cocoa --prefix=$WXWIN \
+ --with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk \
+ --with-macosx-version-min=14.0 \
+ --with-libpng=builtin \
  --with-regex=builtin \
- --with-libiconv=builtin
+ --with-libiconv=builtin \
+ --with-libtiff=builtin
 make
 make install
 ```
@@ -38,17 +40,11 @@ make install
 
 #### Generate the Makefiles
 
-The `run_cmake-osx` script will run `cmake`, but expects to have `wx-config` on the PATH.  If you installed the wxWidgets in $WXWIN, then add `$WXWIN/bin` to your `PATH`:
-
-```
-PATH=$WXWIN/bin:$PATH
-```
-
 Run cmake
 
 ```
 cd phd2
-./run_cmake-osx 64
+./run_cmake-osx 64 -DCMAKE_OSX_DEPLOYMENT_TARGET=14.0
 ```
 
 #### Build PHD2
