@@ -1,6 +1,6 @@
 # Building PHD2 on macOS - 64-bit
 
-Instructions for building a 64-bit version of PHD2 that will run on macOS 10.14 Mojave or newer
+Instructions for building a 64-bit version of PHD2 that will run on macOS 14.0 Sonoma or newer
 
 #### Install MacPorts
 
