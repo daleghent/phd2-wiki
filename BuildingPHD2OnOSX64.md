@@ -2,9 +2,9 @@
 
 Instructions for building a 64-bit version of PHD2 that will run on macOS 14.0 Sonoma or newer
 
-#### Install MacPorts
+#### Install Homebrew
 
-The build will be using a few tools from [HomeBrew](https://brew.sh/). Macports should work just as well it you prefer that.
+The build will be using a few tools and libraries from [HomeBrew](https://brew.sh/). Macports should work just as well it you prefer that.
 
 #### Install CMake
 
@@ -29,14 +29,23 @@ cd wxWidgets-3.1.7-build
  --with-libpng=builtin \
  --with-regex=builtin \
  --with-libiconv=builtin \
- --with-libtiff=builtin
+ --with-libtiff=builtin \
+ --without-libcurl
 make
 make install
 ```
 
+#### Install build dependencies
+
+```
+brew install libnova cfitsio
+```
+
 #### Get the phd2 source code from GitHub
 
-```git clone https://github.com/OpenPHDGuiding/phd2.git```
+```
+git clone https://github.com/OpenPHDGuiding/phd2.git
+```
 
 #### Generate the Makefiles
 
@@ -44,7 +53,7 @@ Run cmake
 
 ```
 cd phd2
-./run_cmake-osx 64 -DCMAKE_OSX_DEPLOYMENT_TARGET=14.0
+./run_cmake-osx
 ```
 
 #### Build PHD2
