@@ -6,7 +6,7 @@
   * Install dependencies (commands for a Fedora-like system; your system may vary)
 ```
 sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static \
-   libnova-devel zlib-devel libusb-devel libcurl-devel
+   libnova-devel zlib-devel libusb-devel libcurl-devel eigen3-devel gtest
 ```
 
 ### Debian-based systems (Ubuntu, Raspbian, ...) ###
@@ -15,7 +15,7 @@ sudo dnf install git cmake pkgconfig wxGTK3-devel libindi-devel libindi-static \
 ```
 sudo apt-get install build-essential git cmake pkg-config libwxgtk3.2-dev \
    wx-common wx3.2-i18n libindi-dev libnova-dev gettext zlib1g-dev libx11-dev \
-   libcurl4-gnutls-dev
+   libcurl4-gnutls-dev libeigen3-dev libgtest-dev
 ```
 
 ### INDI version requirement ###
