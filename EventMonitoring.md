@@ -375,6 +375,7 @@ Set camera exposure (error):
 |`get_ccd_temperature`|none      |"temperature": sensor temperature in degrees C (number) |  |
 |`get_star_image`|integer: size (optional)      |frame: the frame number, width: the width of the image (pixels), height: height of the image (pixels), star\_pos: the star centroid position within the image, pixels: the image data, 16 bits per pixel, row-major order, base64 encoded | Returns an error if a star is not currently selected; The size parameter, if given, must be >= 15.The actual image size returned may be smaller than the requested image size (but will never be larger). The default image size is 15 pixels. |
 |`get_use_subframes`|none |boolean:subframes_in_use|  |
+|`get_variable_delay_settings`|none    |` {"Enabled":boolean, "ShortDelaySeconds":integer, "LongDelaySeconds":integer} ` | 
 |`guide`   | `settle`: object;<br>`recalibrate`: boolean, optional, default = false;<br>`roi`: array [x,y,width,height], optional, default = full frame | integer (0) | See below     |
 |`guide_pulse`| integer: amount (pulse duration in milliseconds, or ao step count), string: direction ("N"/"S"/"E"/"W"/"Up"/"Down"/"Left"/"Right"), string (optional): which ("AO" or "Mount" [default]) | integer (0) | Returns an error if PHD2 is currently calibrating or guiding
 |`loop`    |none      |integer (0)|start capturing, or, if guiding, stop guiding but continue capturing|
