@@ -381,7 +381,7 @@ Set camera exposure (error):
 |`loop`    |none      |integer (0)|start capturing, or, if guiding, stop guiding but continue capturing|
 |`save_image`|none      |` {"filename":"full_path_to_FITS_image_file"} `| save the current image. The client should remove the file when done with it. |
 |`set_algo_param`|string: axis, string: name, float: value    | integer(0)  | set a guide algorithm parameter on an axis |
-|`set_connected`|boolean: connect| integer (0) | connect or disconnect all equipment |
+|`set_connected`|connect: boolean| integer (0) | connect or disconnect all equipment |
 |`set_cooler_state`|enabled: boolean| integer (0) | turn on (`true`) or off (`false`) the camera's cooling function, if equipped with such. Added in version 2.6.13dev6 |
 |`set_dec_guide_mode`|string: mode ("Off"/"Auto"/"North"/"South") | integer(0) |               |
 |`set_exposure`|integer: exposure time in milliseconds| integer (0)|
